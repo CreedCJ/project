@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="w-full shadow">
+        <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
+            <div class="flex gap-3">
+                <a href="">catalogue</a>
+                <a href="">about</a>
+                <a href="">careers</a>
+            </div>
+            <div>
+                <h1 class="text-5xl">logo</h1>
+            </div>
+            <div class="flex gap-3">
+                <a href="">contacts</a>
+                <a href="">production</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CATALOG PAGE ================= -->
+    <section class="bg-white py-8">
+
+        <div class="mx-auto w-[90%]">
+
+            <!-- BREADCRUMB -->
+            <div class="flex items-center gap-1 text-[10px] text-gray-400 mb-6">
+                <span>Home page</span>
+                <span>›</span>
+                <span>Catalog</span>
+                <span>›</span>
+                <span class="text-gray-500">Fruits</span>
+            </div>
+
+
+            <!-- SIDEBAR + MAIN CONTENT -->
+            <div class="grid grid-cols-[auto_1fr] gap-8">
+
+
+                <!-- ================= SIDEBAR ================= -->
+                <aside>
+
+                    <h1 class="text-2xl font-semibold text-[#61A84F] mb-5">
+                        Catalog
+                    </h1>
+
+
+                    <!-- SEARCH -->
+                    <div class="flex items-center gap-2 rounded-md bg-[#f5f5f5] px-3 py-2 mb-6">
+
+                        <span class="text-gray-400 text-sm">
+                            ⌕
+                        </span>
+
+                        <input type="text" placeholder="Search products"
+                            class="bg-transparent outline-none text-[10px] text-gray-600 placeholder:text-gray-400">
+
+                    </div>
+
+
+                    <!-- CATEGORY LINKS -->
+                    <div class="flex flex-col gap-3 text-[11px] text-gray-700">
+
+
+                        <!-- SEASONAL PRODUCTS -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/seasonal.png" alt="Seasonal Products" class="h-4 w-4 object-contain">
+
+                            <span>
+                                Seasonal Products
+                            </span>
+
+                        </a>
+
+
+                        <!-- BEST SELLERS -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/best-seller.png" alt="Best Sellers" class="h-4 w-4 object-contain">
+
+                            <span>
+                                Best Sellers
+                            </span>
+
+                        </a>
+
+
+                        <!-- NEW ARRIVALS -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/new-arrivals.png" alt="New Arrivals" class="h-4 w-4 object-contain">
+
+                            <span>
+                                New Arrivals
+                            </span>
+
+                        </a>
+
+
+                        <!-- ================= FRUITS ================= -->
+                        <div>
+
+                            <button id="fruitsButton" type="button"
+                                class="flex items-center gap-2 text-left hover:text-[#59A94F] transition duration-300">
+
+                                <img src="./images/fruits.png" alt="Fruits" class="h-4 w-4 object-contain">
+
+                                <span>
+                                    Fruits
+                                </span>
+
+                            </button>
+
+
+                            <!-- FRUIT OPTIONS -->
+                            <div id="fruitOptions"
+                                class="grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-in-out">
+
+                                <div class="overflow-hidden">
+
+                                    <div class="flex flex-col gap-2 pl-6 pt-2 text-[10px] text-gray-500">
+
+                                        <a href="#" class="hover:text-[#59A94F] transition">
+                                            Apples
+                                        </a>
+
+                                        <a href="#" class="hover:text-[#59A94F] transition">
+                                            Berries
+                                        </a>
+
+                                        <a href="#" class="hover:text-[#59A94F] transition">
+                                            Grapes
+                                        </a>
+
+                                        <a href="#" class="hover:text-[#59A94F] transition">
+                                            Citrus
+                                        </a>
+
+                                        <a href="#" class="hover:text-[#59A94F] transition">
+                                            Tropical
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FRUIT & BERRY MIXES -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/fruit-berry-mixes.png" alt="Fruit and Berry Mixes"
+                                class="h-4 w-4 object-contain">
+
+                            <span>
+                                Fruit & Berry Mixes
+                            </span>
+
+                        </a>
+
+
+                        <!-- VEGETABLES -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/vegetables.png" alt="Vegetables and Mixes"
+                                class="h-4 w-4 object-contain">
+
+                            <span>
+                                Vegetables & Mixes
+                            </span>
+
+                        </a>
+
+
+                        <!-- DESSERTS -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/desserts.png" alt="Desserts" class="h-4 w-4 object-contain">
+
+                            <span>
+                                Desserts
+                            </span>
+
+                        </a>
+
+
+                        <!-- READY TO EAT -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/ready-to-eat.png" alt="Ready to Eat Meals"
+                                class="h-4 w-4 object-contain">
+
+                            <span>
+                                Ready-to-Eat Meals
+                            </span>
+
+                        </a>
+
+
+                        <!-- DRINKS -->
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+
+                            <img src="./images/drinks.png" alt="Drinks" class="h-4 w-4 object-contain">
+
+                            <span>
+                                Drinks
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- ================= MAIN CONTENT ================= -->
+                <main>
+
+
+                    <!-- ================= PROMO BANNER ================= -->
+                    <div class="relative overflow-hidden rounded-xl bg-[#F84D51] mb-8">
+
+                        <img src="./images/first-order-Vector 2.png" alt="vector"
+                            class="absolute top- left-0.5 rotate-15 opacity-20">
+
+                        <img src="./images/first-order-Vector1.png" alt="vector"
+                            class="absolute left-85 rotate-15 opacity-20">
+
+                        <div class="grid grid-cols-2 items-center">
+
+                            <!-- TEXT SIDE -->
+                            <div class="flex flex-col justify-center gap-10 px-7">
+
+                                <h2 class="text-[42px] font-medium leading-11 text-white">
+                                    20% Off Your
+                                    <span class="font-playfair italic text-[#EEFF4C]">
+                                        First Order
+                                    </span>
+                                </h2>
+
+                                <p class="text-[18px] leading-6 text-white font-manrope">
+                                    Leave your phone number and get <br> 20% off your first order
+                                </p>
+
+                                <button class="flex items-center gap-2 text-black font-bold">
+
+                                    <span class="font-bold rounded-full border-white px-5 py-2 bg-[#EEFF4C]">
+                                        Get Discount
+                                    </span>
+
+                                    <span
+                                        class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EEFF4C] border-white">
+                                        →
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- IMAGE SIDE -->
+                            <div class="flex h-full items-center justify-center">
+
+                                <img src="./images/first-order.png" alt="20 percent off"
+                                    class="h-full w-full object-contain">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <h2 class="mb-5 text-2xl font-semibold text-gray-800">
+                        Fruits
+                    </h2>
+
+
+                    <!-- ================product-grid================= -->
+                    <div class="grid grid-cols-3 gap-x-4 gap-y-7">
+
+
+                        <!-- Products-->
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div
+                                class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                                <button
+                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    ❤️
+                                </button>
+
+                                <img src="./images/fruit-mix.png" alt="Fruit Mix"
+                                    class="h-[75%] w-[75%] object-contain">
+
+                            </div>
+
+
+                            <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                                Fruit Mix
+                            </h4>
+
+                            <p class="text-[18px] text-gray-400">
+                                200 г
+                            </p>
+
+
+                            <div class="mt-2 flex gap-1">
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                    Read more
+                                </button>
+
+                                <button
+                                    class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                    Get Price
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= you may also like ================= -->
+    <section class="mt-16 w-full">
+
+        <div class="w-[90%] mx-auto">
+            <h2 class="mb-5 font-manrope text-[42px] font-medium text-[#2D2D2D] leading-11.25">
+                You May Also Like
+            </h2>
+
+
+            <div class="grid grid-cols-4 gap-3">
+
+
+                <!--cards-->
+                <div>
+
+                    <div class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                        <button
+                            class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                            ❤️
+                        </button>
+
+                        <img src="./images/fruit-mix.png" alt="Fruit Mix" class="h-[75%] w-[75%] object-contain">
+
+                    </div>
+
+
+                    <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                        Fruit Mix
+                    </h4>
+
+                    <p class="text-[18px] text-gray-400">
+                        200 г
+                    </p>
+
+
+                    <div class="mt-2 flex gap-1">
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                            Read more
+                        </button>
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                            Get Price
+                        </button>
+
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                        <button
+                            class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                            ❤️
+                        </button>
+
+                        <img src="./images/fruit-mix.png" alt="Fruit Mix" class="h-[75%] w-[75%] object-contain">
+
+                    </div>
+
+
+                    <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                        Fruit Mix
+                    </h4>
+
+                    <p class="text-[18px] text-gray-400">
+                        200 г
+                    </p>
+
+
+                    <div class="mt-2 flex gap-1">
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                            Read more
+                        </button>
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                            Get Price
+                        </button>
+
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                        <button
+                            class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                            ❤️
+                        </button>
+
+                        <img src="./images/fruit-mix.png" alt="Fruit Mix" class="h-[75%] w-[75%] object-contain">
+
+                    </div>
+
+
+                    <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                        Fruit Mix
+                    </h4>
+
+                    <p class="text-[18px] text-gray-400">
+                        200 г
+                    </p>
+
+
+                    <div class="mt-2 flex gap-1">
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                            Read more
+                        </button>
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                            Get Price
+                        </button>
+
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
+
+                        <button
+                            class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                            ❤️
+                        </button>
+
+                        <img src="./images/fruit-mix.png" alt="Fruit Mix" class="h-[75%] w-[75%] object-contain">
+
+                    </div>
+
+
+                    <h4 class="mt-2 text-[18px] font-manrope font-bold text-[#2D2D2D]">
+                        Fruit Mix
+                    </h4>
+
+                    <p class="text-[18px] text-gray-400">
+                        200 г
+                    </p>
+
+
+                    <div class="mt-2 flex gap-1">
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] py-1 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                            Read more
+                        </button>
+
+                        <button
+                            class="flex-1 font-extrabold font-manrope rounded-full bg-[#57A24D] py-1 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                            Get Price
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PRE-CUT & FRESH FRUITS ================= -->
+    <section class="relative mt-12 h-[170px] w-[90%] mx-auto overflow-hidden rounded-xl bg-[#EAF5E9]">
+
+        <!-- YOUR IMAGE -->
+        <img src="./images/precut-fruits.jpg" alt="Pre-Cut Fresh Fruits"
+            class="absolute right-0 top-0 h-full w-1/2 object-cover">
+
+
+        <!-- FADE -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#EAF5E9] via-[#EAF5E9]/90 to-transparent">
+        </div>
+
+
+        <!-- TEXT -->
+        <div class="relative z-10 flex h-full flex-col justify-center px-6">
+
+            <h2 class="text-xl font-semibold text-gray-700">
+                Pre-Cut & Fresh Fruits
+            </h2>
+
+            <p class="mt-2 max-w-[280px] text-[9px] leading-4 text-gray-500">
+
+                Carefully-cut and fresh fruits ready
+                for you to enjoy. Conveniently packaged
+                so you can save more time while enjoying
+                a healthy snack anytime.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="relative mt-7 h-[110px] w-[90%] mx-auto overflow-hidden rounded-xl bg-[#59A950]">
+
+        <!-- BACKGROUND DECORATION -->
+        <div class="absolute inset-0 opacity-10">
+
+            <div class="absolute -bottom-16 left-[35%] h-32 w-32 rounded-full border-[20px] border-white">
+            </div>
+
+            <div class="absolute -bottom-10 left-[48%] h-24 w-24 rounded-full border-[15px] border-white">
+            </div>
+
+        </div>
+
+
+        <!-- NEWSLETTER CONTENT -->
+        <div class="relative z-10 flex h-full items-center justify-between px-6">
+
+
+            <!-- TEXT -->
+            <div>
+
+                <h2 class="text-xl font-medium text-white">
+                    Fresh Newsletter
+                </h2>
+
+                <p class="mt-1 max-w-[260px] text-[9px] leading-4 text-white/80">
+
+                    Subscribe to our updates and get fresh
+                    information, offers and healthy tips.
+
+                </p>
+
+            </div>
+
+
+            <!-- FORM -->
+            <div class="flex flex-col items-end gap-2">
+
+                <div class="flex gap-2">
+
+                    <input type="email" placeholder="Email"
+                        class="h-7 rounded-full bg-white px-4 text-[9px] outline-none">
+
+                    <button
+                        class="h-7 rounded-full bg-[#E9F63F] px-5 text-[9px] text-gray-700 transition hover:bg-[#dff035]">
+                        Subscribe
+                    </button>
+
+                </div>
+
+
+                <p class="text-[7px] text-white/70">
+                    By subscribing, you agree to our privacy policy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="./catalogue.js">
+
+    </script>
+
+
+    <footer class="w-full bg-[#2D2D2D] mt-20">
+        <div class="w-[90%] mx-auto flex py-10">
+
+            <!-- Logo-->
+            <div class="basis-[50%] text-white flex flex-col items-start gap-8">
+
+                <div>
+                    <h3 class="font-manrope font-medium text-[45px]">
+                        logo
+                    </h3>
+                </div>
+
+                <div>
+                    <p class="font-manrope font-semibold text-[14px] leading-5.5">
+                        4517 Washington Ave. Manchester, <br>
+                        Kentucky <br>
+                        39495
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Footer Links -->
+            <div class="basis-[50%] flex font-manrope text-white">
+
+                <!-- Home -->
+                <div class="basis-[33.33%] flex flex-col gap-4">
+
+                    <h4 class="font-bold text-[18px]">
+                        Home
+                    </h4>
+
+                    <div class="flex flex-col gap-2">
+                        <a href="" class="font-semibold text-[14px]">
+                            Catalog
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            About
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Our production
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Recipes
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Blog -->
+                <div class="basis-[33.33%] flex flex-col gap-4">
+
+                    <h4 class="font-bold text-[18px]">
+                        Blog
+                    </h4>
+
+                    <div class="flex flex-col gap-2">
+                        <a href="" class="font-semibold text-[14px]">
+                            Partnership
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Career
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Job
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Download catalog
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="basis-[33.33%] flex flex-col gap-4">
+
+                    <h4 class="font-bold text-[18px]">
+                        Contact
+                    </h4>
+
+                    <div class="flex flex-col gap-2">
+                        <a href="" class="font-semibold text-[14px]">
+                            Instagram
+                        </a>
+
+                        <a href="" class="font-semibold text-[14px]">
+                            Facebook
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
