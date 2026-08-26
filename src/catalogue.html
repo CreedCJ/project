@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class="w-full shadow">
+    <section class="w-full shadow-xl">
         <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
             <div class="flex gap-3">
                 <a href="">catalogue</a>
@@ -37,13 +37,9 @@
 
         <div class="mx-auto w-[90%]">
 
-            <!-- BREADCRUMB -->
-            <div class="flex items-center gap-1 text-[10px] text-gray-400 mb-6">
-                <span>Home page</span>
-                <span>›</span>
-                <span>Catalog</span>
-                <span>›</span>
-                <span class="text-gray-500">Fruits</span>
+            <div class="flex items-center gap-1 text-[10px] text-[#57A24D] mb-6">
+                <span>Home page / catalog</span>
+                <span class="text-[#2d2d2d]">/ Fruits</span>
             </div>
 
 
@@ -54,44 +50,44 @@
                 <!-- ================= SIDEBAR ================= -->
                 <aside>
 
-                    <h1 class="text-2xl font-semibold text-[#61A84F] mb-5">
+                    <h2 class="text-[42px] font-manrope font-semibold text-[#57A24D] mb-5">
                         Catalog
-                    </h1>
+                    </h2>
 
 
                     <!-- SEARCH -->
                     <div class="flex items-center gap-2 rounded-md bg-[#f5f5f5] px-3 py-2 mb-6">
 
-                        <span class="text-gray-400 text-sm">
+                        <span class="text-[14px] text-black">
                             ⌕
                         </span>
 
                         <input type="text" placeholder="Search products"
-                            class="bg-transparent outline-none text-[10px] text-gray-600 placeholder:text-gray-400">
+                            class="bg-transparent outline-none text-[14px] text-[#7E7E7E] placeholder:text-gray-400">
 
                     </div>
 
 
                     <!-- CATEGORY LINKS -->
-                    <div class="flex flex-col gap-3 text-[11px] text-gray-700">
+                    <div class="flex flex-col gap-3 text-[18px] text-[#2D2D2D] font-bold">
 
 
                         <!-- SEASONAL PRODUCTS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#57A24D] transition duration-300 cursor-pointer">
 
-                            <img src="./images/seasonal.png" alt="Seasonal Products" class="h-4 w-4 object-contain">
+                            <img src="./images/seasonal-product.png" alt="Seasonal Products" class="object-contain">
 
-                            <span>
+                            <h4 class="font-bold">
                                 Seasonal Products
-                            </span>
+                            </h4>
 
                         </a>
 
 
                         <!-- BEST SELLERS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/best-seller.png" alt="Best Sellers" class="h-4 w-4 object-contain">
+                            <img src="./images/best-seller.png" alt="Best Sellers" class="object-contain">
 
                             <span>
                                 Best Sellers
@@ -101,9 +97,9 @@
 
 
                         <!-- NEW ARRIVALS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/new-arrivals.png" alt="New Arrivals" class="h-4 w-4 object-contain">
+                            <div class="bg-[#EEFF4C]"><img src="./images/new-arrivals.png" alt="New Arrivals" class="object-contain"></div>
 
                             <span>
                                 New Arrivals
@@ -116,9 +112,9 @@
                         <div>
 
                             <button id="fruitsButton" type="button"
-                                class="flex items-center gap-2 text-left hover:text-[#59A94F] transition duration-300">
+                                class="flex items-center gap-2 text-left hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                                <img src="./images/fruits.png" alt="Fruits" class="h-4 w-4 object-contain">
+                                <img src="./images/fruits.png" alt="Fruits" class="object-contain">
 
                                 <span>
                                     Fruits
@@ -133,7 +129,7 @@
 
                                 <div class="overflow-hidden">
 
-                                    <div class="flex flex-col gap-2 pl-6 pt-2 text-[10px] text-gray-500">
+                                    <div class="flex flex-col font-manrope font-semibold leading-6.5 gap-2 pl-6 pt-2 text-[14px] text-[#2D2D2D]">
 
                                         <a href="#" class="hover:text-[#59A94F] transition">
                                             Apples
@@ -165,10 +161,9 @@
 
 
                         <!-- FRUIT & BERRY MIXES -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/fruit-berry-mixes.png" alt="Fruit and Berry Mixes"
-                                class="h-4 w-4 object-contain">
+                            <img src="./images/fruit and berries.png" alt="F&B" class="object-contain">
 
                             <span>
                                 Fruit & Berry Mixes
@@ -178,10 +173,9 @@
 
 
                         <!-- VEGETABLES -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/vegetables.png" alt="Vegetables and Mixes"
-                                class="h-4 w-4 object-contain">
+                            <img src="./images/vegetables.png" alt="Vegetables and Mixes" class="object-contain">
 
                             <span>
                                 Vegetables & Mixes
@@ -191,9 +185,9 @@
 
 
                         <!-- DESSERTS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/desserts.png" alt="Desserts" class="h-4 w-4 object-contain">
+                            <img src="./images/desserts.png" alt="Desserts" class="object-contain">
 
                             <span>
                                 Desserts
@@ -203,10 +197,9 @@
 
 
                         <!-- READY TO EAT -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/ready-to-eat.png" alt="Ready to Eat Meals"
-                                class="h-4 w-4 object-contain">
+                            <img src="./images/ready-to-eat.png" alt="Ready to Eat Meals" class="object-contain">
 
                             <span>
                                 Ready-to-Eat Meals
@@ -216,9 +209,9 @@
 
 
                         <!-- DRINKS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300">
+                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <img src="./images/drinks.png" alt="Drinks" class="h-4 w-4 object-contain">
+                            <img src="./images/drinks.png" alt="Drinks" class="object-contain">
 
                             <span>
                                 Drinks
@@ -263,12 +256,12 @@
 
                                 <button class="flex items-center gap-2 text-black font-bold">
 
-                                    <span class="font-bold rounded-full border-white px-5 py-2 bg-[#EEFF4C]">
+                                    <span class="relative font-bold rounded-full border-white px-5 py-2 bg-white cursor-pointer">
                                         Get Discount
                                     </span>
 
                                     <span
-                                        class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EEFF4C] border-white">
+                                        class="absolute left-41 flex h-10 w-10 items-center justify-center rounded-full bg-white border-white cursor-pointer">
                                         →
                                     </span>
 
@@ -306,7 +299,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 p-2 z-10 flex items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -346,7 +339,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -386,7 +379,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -426,7 +419,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -466,7 +459,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -506,7 +499,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -546,7 +539,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -586,7 +579,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -626,7 +619,7 @@
                                 class="relative flex items-center justify-center overflow-hidden rounded-lg bg-[#F1F1F1]">
 
                                 <button
-                                    class="absolute right-2 top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
+                                    class="absolute right-2 top-2 z-10 flex p-2 items-center justify-center rounded-full bg-white text-[18px] shadow-sm">
                                     ❤️
                                 </button>
 
@@ -844,41 +837,39 @@
 
 
     <!-- ================= PRE-CUT & FRESH FRUITS ================= -->
-    <section class="relative mt-12 h-[170px] w-[90%] mx-auto overflow-hidden rounded-xl bg-[#EAF5E9]">
+    <section class="relative mt-12 w-[90%] mx-auto overflow-hidden rounded-xl bg-[#EFF6EE]">
+        <img src="./images/precut-Vector 13.png" alt="Pre-Cut vector"
+            class="absolute -left-76.25 rotate-10 top-[48px] ">
+        <img src="./images/precut-Vector 14.png" alt="Pre-Cut vector" class="absolute right-0 top-0 ">
 
-        <!-- YOUR IMAGE -->
-        <img src="./images/precut-fruits.jpg" alt="Pre-Cut Fresh Fruits"
-            class="absolute right-0 top-0 h-full w-1/2 object-cover">
-
-
-        <!-- FADE -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#EAF5E9] via-[#EAF5E9]/90 to-transparent">
+        <!-- <div class="absolute inset-0 bg-gradient-to-r from-[#EAF5E9] via-[#EAF5E9]/90 to-transparent"> -->
         </div>
 
+        <!-- text and img -->
+        <div class="grid grid-cols-[55%_45%]">
+            <div class="relative z-10 flex flex-col gap-8 justify-center py-10 px-8">
 
-        <!-- TEXT -->
-        <div class="relative z-10 flex h-full flex-col justify-center px-6">
+                <h2 class="text-[42px] font-manrope font-semibold text-[#2D2D2D]">
+                    Pre-Cut & Fresh Fruits
+                </h2>
 
-            <h2 class="text-xl font-semibold text-gray-700">
-                Pre-Cut & Fresh Fruits
-            </h2>
+                <p class="text-[18px] font-helvetica leading-7 text-[#2D2D2D]">
 
-            <p class="mt-2 max-w-[280px] text-[9px] leading-4 text-gray-500">
+                    We carefully peel and cut your favorite fruits into perfectly sized pieces. <br>
+                    Convenient packaging with a small fork inside lets you enjoy a healthy <br> snack anytime, anywhere.
 
-                Carefully-cut and fresh fruits ready
-                for you to enjoy. Conveniently packaged
-                so you can save more time while enjoying
-                a healthy snack anytime.
+                </p>
 
-            </p>
+            </div>
 
+            <div><img src="./images/pre-cut fruit.png" alt="pre-cut fruit"></div>
         </div>
 
     </section>
 
 
     <!-- ================= NEWSLETTER ================= -->
-    <section class="relative mt-7 h-[110px] w-[90%] mx-auto overflow-hidden rounded-xl bg-[#59A950]">
+    <section class="relative mt-12 w-[90%] mx-auto overflow-hidden px-7 rounded-xl bg-[#59A950]">
 
         <!-- BACKGROUND DECORATION -->
         <div class="absolute inset-0 opacity-10">
@@ -893,20 +884,19 @@
 
 
         <!-- NEWSLETTER CONTENT -->
-        <div class="relative z-10 flex h-full items-center justify-between px-6">
+        <div class="relative z-10 flex items-center justify-between py-7">
 
 
             <!-- TEXT -->
-            <div>
+            <div class="flex flex-col gap-3">
 
-                <h2 class="text-xl font-medium text-white">
+                <h2 class="text-[42px] font-semibold font-manrope text-white">
                     Fresh Newsletter
                 </h2>
 
-                <p class="mt-1 max-w-[260px] text-[9px] leading-4 text-white/80">
+                <p class="text-[18px] leading-6 font-manrope text-[#FFFFFF]">
 
-                    Subscribe to our updates and get fresh
-                    information, offers and healthy tips.
+                    Subscribe for free updates on healthy living, <br> special offers, and the benefits of our products
 
                 </p>
 
@@ -914,23 +904,21 @@
 
 
             <!-- FORM -->
-            <div class="flex flex-col items-end gap-2">
+            <div class="flex flex-col items-start gap-2">
 
-                <div class="flex gap-2">
+                <div class="flex gap-5">
 
-                    <input type="email" placeholder="Email"
-                        class="h-7 rounded-full bg-white px-4 text-[9px] outline-none">
+                    <input type="email" placeholder="Email" class="rounded-full bg-white px-7 py-3 outline-none">
 
-                    <button
-                        class="h-7 rounded-full bg-[#E9F63F] px-5 text-[9px] text-gray-700 transition hover:bg-[#dff035]">
+                    <button class="rounded-full bg-[#E9F63F] px-7 py-3 text-gray-700 transition hover:bg-[#dff035] cursor-pointer">
                         Subscribe
                     </button>
 
                 </div>
 
 
-                <p class="text-[7px] text-white/70">
-                    By subscribing, you agree to our privacy policy.
+                <p class="text-[14px] text-white font-manrope font-semibold">
+                    By clicking “Submit,” you agree to the privacy policy.
                 </p>
 
             </div>

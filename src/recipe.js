@@ -278,9 +278,6 @@ function handleSwipe() {
 
 }
 
-
-// ================= INITIALIZE =================
-
 createProgressBars();
 
 showRecipe(0);
