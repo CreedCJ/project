@@ -307,3 +307,76 @@ recipeCards.forEach((card) => {
     showImage();
 
 });
+
+
+
+
+const images = [
+    "./images/fruit-mixxx.png",
+    "./images/fruit-mixxx-2.png",
+    "./images/fruit-mixxx-3.png",
+    "./images/fruit-mixxx.png"
+];
+
+const productImage = document.getElementById("productImage");
+const nextButton = document.getElementById("nextButton");
+const dots = document.querySelectorAll(".slider-dot");
+
+let currentIndex = 0;
+
+
+// Function to change image
+function changeImage(index) {
+
+    currentIndex = index;
+
+    // Change image
+    productImage.src = images[currentIndex];
+
+    // Change active dot
+    dots.forEach((dot, i) => {
+
+        if (i === currentIndex) {
+
+            dot.classList.remove("text-[#AFAFAF]");
+            dot.classList.add("text-[#2D2D2D]");
+
+        } else {
+
+            dot.classList.remove("text-[#2D2D2D]");
+            dot.classList.add("text-[#AFAFAF]");
+
+        }
+
+    });
+
+}
+
+
+// Arrow → next image
+nextButton.addEventListener("click", () => {
+
+    currentIndex++;
+
+    // Go back to first image
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    changeImage(currentIndex);
+
+});
+
+
+// Dots → specific image
+dots.forEach((dot) => {
+
+    dot.addEventListener("click", () => {
+
+        const index = Number(dot.dataset.index);
+
+        changeImage(index);
+
+    });
+
+});

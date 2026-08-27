@@ -31,14 +31,117 @@
         </div>
     </section>
 
-    <div class="w-full">
+    <div class="w-full my-10">
         <div class="w-[90%] mx-auto font-semibold text-[14px] text-[#57A24D] mb-6 leading-5.5">
-            <p>Home page / catalog / Fruits <span class="text-[#2d2d2d]">/ Fruit mix</span> </p>
+            <p><a href="./index.html">Home page</a> / <a href="./catalogue.html">catalog</a> / Fruits <span class="text-[#2d2d2d]">/ Fruit mix</span> </p>
         </div>
     </div>
 
-    <!-- Cook with this product -->
     <section class="w-full">
+        <div class="w-[90%] mx-auto grid grid-cols-2 gap-15">
+            <div class="flex flex-col gap-5">
+                <!-- Image Slider -->
+                <div class="relative bg-[#EEEEEE] rounded-2xl overflow-hidden">
+
+                    <!-- Image -->
+                    <img id="productImage" src="./images/fruit-mixxx.png" alt="fruit-mix"
+                        class="object-contain object-center w-full h-full transition-opacity duration-500">
+
+                    <!-- Dots -->
+                    <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-1">
+                        <button class="slider-dot text-[#2D2D2D] text-[20px] leading-none transition-all duration-300"
+                            data-index="0">•</button>
+
+                        <button class="slider-dot text-[#AFAFAF] text-[20px] leading-none transition-all duration-300"
+                            data-index="1">•</button>
+
+                        <button class="slider-dot text-[#AFAFAF] text-[20px] leading-none transition-all duration-300"
+                            data-index="2">•</button>
+
+                        <button class="slider-dot text-[#AFAFAF] text-[20px] leading-none transition-all duration-300"
+                            data-index="3">•</button>
+                    </div>
+
+                    <!-- Arrow -->
+                    <button id="nextButton"
+                        class="absolute right-5 bottom-5 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-[#f5f5f5] transition duration-300">
+
+                        <span class="text-[32px] p-8"><img src="./images/fruit-arrow.png" alt="arrow"></span>
+
+                    </button>
+
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <p class="opacity-80 font-helvetica text-[18px] leading-[100%] text-[#2D2D2D]">
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <!-- Button -->
+                <button
+                    class="self-start font-bold font-helvetica rounded-full border-none bg-[#2D2D2D] px-5 py-2.5 text-[16px] text-[#FFFFFF] cursor-pointer hover:bg-[#3f3f3f] transition duration-700">
+                    Place Order
+                </button>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2"><img src="./images/favourite-heart.png" alt="favourite">
+                        <p class="font-manrope font-semibold text-[14px] text-[#2D2D2D]">Favorite</p>
+                    </div>
+                    <div class="flex items-center gap-2"><img src="./images/share-sign.png" alt="share-sign">
+                        <p class="font-manrope font-semibold text-[14px] text-[#2D2D2D]">Share</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <p class="font-helvetica font-medium text-[#2D2D2D] text-[42px] leading-11.25">Fruit Mix</p>
+
+                    <p class="font-helvetica text-[18px] leading-[100%] text-[#2D2D2D]">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation </p>
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+                            <button
+                                class="font-extrabold font-manrope rounded-full bg-[#57A24D] px-5 py-2.5 text-[16px] text-white cursor-pointer hover:bg-[#3a7d31] transition duration-700">
+                                Get Price
+                            </button>
+
+                            <button
+                                class="font-extrabold font-manrope rounded-full border-none bg-[#EEEEEE] px-5 py-2.5 text-[16px] text-[#2D2D2D] cursor-pointer hover:bg-[#dad9d9fe] transition duration-700">
+                                Free Sample Batch
+                            </button>
+                        </div>
+
+                        <a href=""
+                            class="font-helvetica font-medium text-[14px] text-[#2D2D2D] underline decoration-solid opacity-70">Store
+                            Availability</a>
+
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h4 class="font-manrope font-bold text-[18px] leading-5.5" text-[#2D2D2D]>Ingredients: </h4>
+
+                    <p class="font-helvetica text-[18px] leading-[100%] text-[#2D2D2D]">Strawberries, pineapple,
+                        blueberries, mango</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h4 class="font-bold font-manrope text-[18px] leading-5.5 text-[#2D2D2D]">description:</h4>
+
+                    <p class="font-helvetica text-[18px] text-[#2D2D2D] opacity-80 leading-[100%]">ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cook with this product -->
+    <section class="w-full mt-20">
         <div class="w-[90%] mx-auto">
 
             <h2 class="mb-5 font-helvetica text-[42px] font-medium text-[#2D2D2D] leading-11.25">
