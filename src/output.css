@@ -272,6 +272,9 @@
   .top-\[350px\] {
     top: 350px;
   }
+  .-right-2 {
+    right: calc(var(--spacing) * -2);
+  }
   .right-0 {
     right: 0px;
   }
@@ -293,6 +296,9 @@
   .-bottom-16 {
     bottom: calc(var(--spacing) * -16);
   }
+  .-bottom-19 {
+    bottom: calc(var(--spacing) * -19);
+  }
   .bottom-0 {
     bottom: 0px;
   }
@@ -304,6 +310,9 @@
   }
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
+  }
+  .-left-12 {
+    left: calc(var(--spacing) * -12);
   }
   .-left-76\.25 {
     left: calc(var(--spacing) * -76.25);
@@ -514,9 +523,6 @@
   }
   .h-\[420px\] {
     height: 420px;
-  }
-  .h-\[660px\] {
-    height: 660px;
   }
   .h-full {
     height: 100%;
@@ -1095,6 +1101,10 @@
     --tw-leading: calc(var(--spacing) * 6.5);
     line-height: calc(var(--spacing) * 6.5);
   }
+  .leading-6\.75 {
+    --tw-leading: calc(var(--spacing) * 6.75);
+    line-height: calc(var(--spacing) * 6.75);
+  }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
@@ -1308,11 +1318,27 @@
       --tw-translate-y: calc(var(--spacing) * -2);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:scale-98:hover {
+      --tw-scale-x: 98%;
+      --tw-scale-y: 98%;
+      --tw-scale-z: 98%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:scale-103:hover {
+      --tw-scale-x: 103%;
+      --tw-scale-y: 103%;
+      --tw-scale-z: 103%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .hover\:scale-105:hover {
       --tw-scale-x: 105%;
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:border-none:hover {
+      --tw-border-style: none;
+      border-style: none;
     }
     .hover\:bg-\[\#3a7d31\]:hover {
       background-color: #3a7d31;
@@ -1322,6 +1348,9 @@
     }
     .hover\:bg-\[\#57A24D\]:hover {
       background-color: #57A24D;
+    }
+    .hover\:bg-\[\#EEFF4C\]:hover {
+      background-color: #EEFF4C;
     }
     .hover\:bg-\[\#dad9d9fe\]:hover {
       background-color: #dad9d9fe;
@@ -1337,6 +1366,9 @@
     }
     .hover\:text-\[\#59A94F\]:hover {
       color: #59A94F;
+    }
+    .hover\:text-black:hover {
+      color: var(--color-black);
     }
     .hover\:text-white:hover {
       color: var(--color-white);
