@@ -18,7 +18,7 @@ const recipes = [
     {
         image: "./images/image 67.jpg",
         title: "Healthy Daily Snack",
-        category: "Snack",
+        category: "Healthy Snacks",
         time: "5 minutes"
     },
 
@@ -35,7 +35,7 @@ const recipeStatus = document.getElementById("recipeStatus");
 const recipeImage = document.getElementById("recipeStatusImage");
 const recipeTitle = document.getElementById("recipeTitle");
 const recipeCategory = document.getElementById("recipeCategory");
-const recipeTime = document.getElementById("recipeTime");
+const recipeTime = document.getElementById("recipeTimeText");
 const recipeProgress = document.getElementById("recipeProgress");
 
 const recipeNext = document.getElementById("recipeNext");
@@ -123,7 +123,6 @@ function showRecipe(index) {
         recipeImage.classList.remove("opacity-0");
 
     }, 200);
-
 
     progress = 0;
 
