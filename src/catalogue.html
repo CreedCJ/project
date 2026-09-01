@@ -11,23 +11,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2506f6b6f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="w-full shadow-xl">
+    <section class="w-full shadow relative">
         <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
-            <div class="flex gap-3">
+
+            <!-- Hamburger -->
+            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Left Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="./catalogue.html">catalogue</a>
                 <a href="">about</a>
                 <a href="">careers</a>
             </div>
+
+            <!-- Logo -->
             <div>
-                <h1 class="text-5xl">logo</h1>
+                <h1 class="text-4xl md:text-5xl">logo</h1>
             </div>
-            <div class="flex gap-3">
+
+            <!-- Right Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="">contacts</a>
                 <a href="">production</a>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
+
+                <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
+                    <a href="./index.html">Home</a>
+                    <a href="">about</a>
+                    <a href="">careers</a>
+                    <a href="">contacts</a>
+                    <a href="">production</a>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -39,7 +65,7 @@
 
             <div class="flex items-center gap-1 font-manrope font-semibold leading-5.5 text-[14px] text-[#57A24D] mb-6">
                 <span><a href="./index.html">Home page</a> / <a href="./catalogue.html">catalog</a></span>
-                <span class="text-[#2d2d2d]">/ Fruits</span>
+                <span class="text-[#2d2d2d]"><a href="./product.html">/ Fruits</a></span>
             </div>
 
 
@@ -73,7 +99,8 @@
 
 
                         <!-- SEASONAL PRODUCTS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#57A24D] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#57A24D] transition duration-300 cursor-pointer">
 
                             <img src="./images/seasonal-product.png" alt="Seasonal Products" class="object-contain">
 
@@ -85,7 +112,8 @@
 
 
                         <!-- BEST SELLERS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/best-seller.png" alt="Best Sellers" class="object-contain">
 
@@ -97,9 +125,11 @@
 
 
                         <!-- NEW ARRIVALS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
-                            <div class="bg-[#EEFF4C]"><img src="./images/new-arrivals.png" alt="New Arrivals" class="object-contain"></div>
+                            <div class="bg-[#EEFF4C]"><img src="./images/new-arrivals.png" alt="New Arrivals"
+                                    class="object-contain"></div>
 
                             <span>
                                 New Arrivals
@@ -129,7 +159,8 @@
 
                                 <div class="overflow-hidden">
 
-                                    <div class="flex flex-col font-manrope font-semibold leading-6.5 gap-2 pl-6 pt-2 text-[14px] text-[#2D2D2D]">
+                                    <div
+                                        class="flex flex-col font-manrope font-semibold leading-6.5 gap-2 pl-6 pt-2 text-[14px] text-[#2D2D2D]">
 
                                         <a href="#" class="hover:text-[#59A94F] transition">
                                             Apples
@@ -161,7 +192,8 @@
 
 
                         <!-- FRUIT & BERRY MIXES -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/fruit and berries.png" alt="F&B" class="object-contain">
 
@@ -173,7 +205,8 @@
 
 
                         <!-- VEGETABLES -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/vegetables.png" alt="Vegetables and Mixes" class="object-contain">
 
@@ -185,7 +218,8 @@
 
 
                         <!-- DESSERTS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/desserts.png" alt="Desserts" class="object-contain">
 
@@ -197,7 +231,8 @@
 
 
                         <!-- READY TO EAT -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/ready-to-eat.png" alt="Ready to Eat Meals" class="object-contain">
 
@@ -209,7 +244,8 @@
 
 
                         <!-- DRINKS -->
-                        <a href="#" class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
+                        <a href="#"
+                            class="flex items-center gap-2 hover:text-[#59A94F] transition duration-300 cursor-pointer">
 
                             <img src="./images/drinks.png" alt="Drinks" class="object-contain">
 
@@ -256,7 +292,8 @@
 
                                 <button class="flex items-center gap-2 text-black font-bold">
 
-                                    <span class="relative font-bold rounded-full border-white px-5 py-2 bg-white cursor-pointer">
+                                    <span
+                                        class="relative font-bold rounded-full border-white px-5 py-2 bg-white cursor-pointer">
                                         Get Discount
                                     </span>
 
@@ -910,7 +947,8 @@
 
                     <input type="email" placeholder="Email" class="rounded-full bg-white px-7 py-3 outline-none">
 
-                    <button class="rounded-full bg-[#E9F63F] px-7 py-3 text-gray-700 transition hover:bg-[#dff035] cursor-pointer">
+                    <button
+                        class="rounded-full bg-[#E9F63F] px-7 py-3 text-gray-700 transition hover:bg-[#dff035] cursor-pointer">
                         Subscribe
                     </button>
 
@@ -967,7 +1005,7 @@
                     </h4>
 
                     <div class="flex flex-col gap-2">
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="./catalogue.html" class="font-semibold text-[14px]">
                             Catalog
                         </a>
 
@@ -979,7 +1017,7 @@
                             Our production
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="./product.html" class="font-semibold text-[14px]">
                             Recipes
                         </a>
                     </div>

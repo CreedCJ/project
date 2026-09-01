@@ -11,192 +11,325 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2506f6b6f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="overflow-x-hidden">
-    <section class="w-full shadow">
+    <section class="w-full shadow relative">
         <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
-            <div class="flex gap-10">
+
+            <!-- Hamburger -->
+            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Left Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="./catalogue.html">catalogue</a>
                 <a href="">about</a>
                 <a href="">careers</a>
             </div>
+
+            <!-- Logo -->
             <div>
-                <h1 class="text-5xl">logo</h1>
+                <h1 class="text-3xl md:text-5xl">logo</h1>
             </div>
-            <div class="flex gap-10">
+
+            <!-- Right Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="">contacts</a>
                 <a href="">production</a>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
+
+                <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
+                    <a href="./catalogue.html">catalogue</a>
+                    <a href="">about</a>
+                    <a href="">careers</a>
+                    <a href="">contacts</a>
+                    <a href="">production</a>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <section class="relative flex h-screen w-full">
+    <section class="relative flex flex-col md:flex-row h-screen w-full">
 
-        <div class="w-1/2 h-full bg-cover bg-center" style="background-image: url('./images/hero-left\ \(2\).jpg');">
+        <!-- Left Image -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full bg-cover bg-center"
+            style="background-image: url('./images/hero-left\ \(2\).jpg');">
         </div>
 
-        <div class="w-1/2 h-full bg-cover bg-center" style="background-image: url('./images/hero-right.jpg');">
+        <!-- Right Image -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full bg-cover bg-center"
+            style="background-image: url('./images/hero-right.jpg');">
         </div>
 
+        <!-- Overlay -->
         <div class="absolute inset-0 bg-black/20"></div>
 
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <p class=" text-white text-center text-[70px] font-manrope leading-[91%] absolute top-[100px]">
-                Healthy eating made <br> <span class="font-playfair text-[#EEFF4C] italic text-[69px] lowercase">easier,
-                    tastier, and more
-                    accessible</span> <br> with fresh snacks
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-5">
+
+            <p class="text-white text-center font-manrope leading-[95%] text-[35px] md:text-[45px] lg:text-[70px]">
+
+                Healthy eating made <br>
+
+                <span class="font-playfair text-[#EEFF4C] italic text-[34px] md:text-[44px] lg:text-[69px] lowercase">
+
+                    easier, tastier, and more accessible
+
+                </span>
+
+                <br>
+
+                with fresh snacks
+
             </p>
 
-            <button class="flex items-center gap-2 text-black font-bold absolute top-[350px]">
 
-                <span class="relative rounded-full border-white px-5 py-2 bg-[#EEFF4C]">
-                    Shop now
-                </span>
+            <!-- Button -->
+            <a href="./catalogue.html">
+                <button class="flex items-center gap-2 text-black font-bold mt-8 active:scale-95">
 
-                <span
-                    class="flex absolute left-28.5 h-10 w-10 items-center justify-center rounded-full bg-[#EEFF4C] border-white">
-                    →
-                </span>
+                    <span
+                        class="rounded-full px-5 py-2 bg-[#EEFF4C] cursor-pointer transition duration-200 lg:hover:bg-[#dce83f] lg:hover:scale-95">
 
-            </button>
+                        Shop now
+
+                    </span>
+
+                    <span
+                        class="flex -ml-3 h-10 w-10 items-center justify-center rounded-full bg-[#EEFF4C] cursor-pointer transition duration-200 lg:hover:bg-[#dce83f] lg:hover:scale-95">
+
+                        →
+
+                    </span>
+
+                </button>
+            </a>
 
         </div>
+
     </section>
 
-    <section class="w-full">
-        <div class="w-[90%] mx-auto grid grid-cols-4 gap-4 absolute top-145 left-[5%]">
+    <section class="w-full mt-20 md:mt-20">
+
+        <div
+            class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:absolute lg:top-145 lg:left-[5%]">
+
+            <!-- Card 1 -->
             <div
-                class="group bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2 overflow-hidden">
-                <h3 class="font-bold text-2xl leading-7 relative">5 Years <br> of Freshness</h3>
+                class="group relative bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2 overflow-hidden">
+
+                <h3 class="font-bold text-2xl leading-7 relative">
+                    5 Years <br> of Freshness
+                </h3>
+
                 <p class="text-[18px] leading-[24px] text-[#2D2D2D]">
-                    Creating <br> and delivering over <br> 1,700 SKUs every day
+                    Creating <br>
+                    and delivering over <br>
+                    1,700 SKUs every day
                 </p>
 
                 <a href=""
-                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">about
-                    us
+                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">
+                    about us
                 </a>
 
                 <div class="opacity-10">
-                    <div><img src="./images/5-years vector.png" alt="jpeg" class="absolute top-38.75 right-0"></div>
-                    <div><img src="./images/5-years vector 2.png" alt="jpeg" class="absolute top-23.5 left-42.5"></div>
-                    <div><img src="./images/5-years vector 3.png" alt="jpeg" class="absolute top-13 left-56.5"></div>
+                    <img src="./images/5-years vector.png" alt="jpeg" class="absolute top-38.75 right-0">
+
+                    <img src="./images/5-years vector 2.png" alt="jpeg" class="absolute top-23.5 left-42.5">
+
+                    <img src="./images/5-years vector 3.png" alt="jpeg" class="absolute top-13 left-56.5">
                 </div>
+
             </div>
 
+
+            <!-- Card 2 -->
             <div
                 class="group bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2">
-                <h3 class="font-bold text-2xl leading-7">Trusted by <br> Leading Brands</h3>
+
+                <h3 class="font-bold text-2xl leading-7">
+                    Trusted by <br> Leading Brands
+                </h3>
+
                 <p class="text-[18px] leading-[24px] text-[#2D2D2D]">
-                    Creating <br> and delivering over <br> 1,700 SKUs every day
+                    Creating <br>
+                    and delivering over <br>
+                    1,700 SKUs every day
                 </p>
 
                 <a href=""
-                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">read
-                    more</a>
-            </div>
-
-            <div
-                class="group bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2">
-                <h3 class="font-bold text-2xl leading-7">Supporting <br> a Healthy Lifestyle</h3>
-                <p class="text-[18px] leading-[24px] text-[#2D2D2D]">
-                    Helping people maintain <br> a healthy and balanced <br> lifestyle
-                </p>
-
-                <a href=""
-                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">go
-                    to blog</a>
-            </div>
-
-            <div
-                class="group relative bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2 overflow-hidden">
-                <h3 class="font-bold text-2xl leading-7 relative">2,000 <br> Employees</h3>
-                <p class="text-[18px] leading-6 text-[#2D2D2D]">
-                    Providing jobs for <br> more than 2,000 <br> people
-                </p>
-
-                <a href=""
-                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">read
-                    more
+                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">
+                    read more
                 </a>
 
-                <div><img src="./images/2000-employees vector.png" alt="jpeg" class="absolute bottom-0 right-0">
-                </div>
             </div>
+
+
+            <!-- Card 3 -->
+            <div
+                class="group bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2">
+
+                <h3 class="font-bold text-2xl leading-7">
+                    Supporting <br> a Healthy Lifestyle
+                </h3>
+
+                <p class="text-[18px] leading-[24px] text-[#2D2D2D]">
+                    Helping people maintain <br>
+                    a healthy and balanced <br>
+                    lifestyle
+                </p>
+
+                <a href=""
+                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">
+                    go to blog
+                </a>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div
+                class="group relative bg-white font-manrope flex flex-col items-start gap-5 border border-[#57A24D] rounded-2xl pt-5 px-5 backdrop-blur-lg shadow hover:bg-[#57A24D] hover:text-white transition duration-300 hover:-translate-y-2 overflow-hidden">
+
+                <h3 class="font-bold text-2xl leading-7 relative">
+                    2,000 <br> Employees
+                </h3>
+
+                <p class="text-[18px] leading-6 text-[#2D2D2D]">
+                    Providing jobs for <br>
+                    more than 2,000 <br>
+                    people
+                </p>
+
+                <a href=""
+                    class="text-[#57A24D] underline text-[14px] font-helvetica font-medium lowercase group-hover:!text-white transition duration-300">
+                    read more
+                </a>
+
+                <img src="./images/2000-employees vector.png" alt="jpeg" class="absolute bottom-0 right-0">
+
+            </div>
+
         </div>
+
     </section>
 
-    <section class="w-full bg-[#F24A47] rounded-2xl relative mt-60">
-        <div class="absolute top-32 left-2.5 opacity-10"><img src="./images/Vector 4.jpg" alt="v4"></div>
+    <section class="w-full bg-[#F24A47] rounded-2xl relative mt-20 md:mt-20 overflow-hidden">
 
-        <div class="absolute top-15.5 left-90 opacity-10 -rotate-11">
-            <img src="./images/Union.jpg" alt="union" class="relative">
-            <img src="./images/tomato-head-left.png" alt="" class="absolute top-19 left-107 rotate-34">
-            <img src="./images/tomato-head-right.png" alt="" class="absolute top-21 left-130 rotate-162">
-            <img src="./images/tomato.png" alt="" class="absolute top-39 left-90 rotate-79">
+        <!-- Decorative Vector -->
+        <div class="absolute top-32 left-2.5 opacity-10">
+            <img src="./images/Vector 4.jpg" alt="v4">
         </div>
 
-        <!-- <div><img src="./images/Layer_111.jpg" alt="layer" class="absolute top-[254px] left-[1049px]"></div> -->
 
-        <div class="w-[90%] mx-auto flex items-center justify-between py-8">
-            <div class="flex flex-col gap-15 text-white">
-                <p class="leading-11 text-[42px]">Fresh snacks are a daily <br> <span
-                        class="text-[#EEFF4C] italic font-playfair">act of care</span> for yourself <br> and your loved
-                    ones </p>
+        <!-- Decorative Tomato -->
+        <div class="absolute top-15.5 left-90 opacity-10 -rotate-11">
 
-                <p class="font-manrope text-[18px] leading-6">We make healthy snacking an easy <br> everyday choice</p>
+            <img src="./images/Union.jpg" alt="union" class="relative">
+
+            <img src="./images/tomato-head-left.png" alt="" class="absolute top-19 left-107 rotate-34">
+
+            <img src="./images/tomato-head-right.png" alt="" class="absolute top-21 left-130 rotate-162">
+
+            <img src="./images/tomato.png" alt="" class="absolute top-39 left-90 rotate-79">
+
+        </div>
+
+
+        <!-- Main Content -->
+        <div
+            class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0 py-8 md:py-10 lg:py-12">
+
+
+            <!-- Text -->
+            <div class="flex flex-col gap-10 md:gap-15 text-white w-full md:w-auto">
+
+                <p class="leading-9 md:leading-11 text-[32px] md:text-[38px] lg:text-[42px]">
+
+                    Fresh snacks are a daily <br>
+
+                    <span class="text-[#EEFF4C] italic font-playfair">
+                        act of care
+                    </span>
+
+                    for yourself <br class="hidden md:block">
+
+                    and your loved ones
+
+                </p>
+
+
+                <p class="font-manrope text-[16px] md:text-[18px] leading-6">
+
+                    We make healthy snacking an easy
+                    <br class="hidden md:block">
+                    everyday choice
+
+                </p>
+
             </div>
 
-            <div>
-                <div class="rounded-2xl w-[500px] h-[420px]">
+
+            <!-- Images -->
+            <div class="relative w-full md:w-[45%] lg:w-auto flex justify-center">
+
+
+                <!-- Main Image -->
+                <div
+                    class="rounded-2xl w-full max-w-[500px] md:w-[350px] lg:w-[500px] h-[300px] md:h-[320px] lg:h-[420px]">
+
                     <img src="../src/images/cheerful-gardner.png" alt="farm worker"
                         class="object-contain w-full h-full rounded-2xl">
-                </div>
-                <div class="absolute w-[225px] h-[241px] rotate-8 top-39 left-153.25 bg-transparent">
-                    <img src="./images/berries-picture.png" alt="rotate-img" class="rounded-2xl">
+
                 </div>
 
-                <!-- <div class="relative grid grid-cols-5 grid-rows-5 w-full max-w-[600px] aspect-[5/4]">
 
-                    Main image
-                    <div class="col-span-5 row-span-5 rounded-2xl">
-                        <img src="../src/images/cheerful-gardner.png" alt="farm worker"
-                            class="w-full h-full object-cover rounded-2xl">
-                    </div>
+                <!-- Berries Image -->
+                <div
+                    class="absolute w-[140px] h-[150px] md:w-[150px] md:h-[165px] lg:w-[225px] lg:h-[241px] rotate-8 top-[220px] md:top-[170px] lg:top-39 right-[-10px] md:-right-5 lg:right-auto lg:left-153.25 bg-transparent">
 
-                    Berries image
-                    <div class="absolute col-span-2 row-span-3 rotate-8 top-[35%] left-[65%]">
-                        <img src="./images/berries-picture.png" alt="rotate-img"
-                            class="w-full h-full object-cover rounded-2xl">
-                    </div>
+                    <img src="./images/berries-picture.png" alt="rotate-img"
+                        class="w-full h-full object-cover rounded-2xl">
 
-                </div> -->
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
     <!-- ================= CATALOG ================= -->
     <section class="w-full">
 
-        <div class="w-[90%] mx-auto pt-16 pb-4">
+        <div class="w-[90%] mx-auto pt-12 md:pt-16 pb-4">
+
             <!-- Heading -->
-            <h2 class="text-[36px] font-medium tracking-tight mb-7">
+            <h2 class="text-[30px] md:text-[36px] lg:text-[40px] font-medium tracking-tight mb-7">
                 Catalog
             </h2>
 
 
             <!-- Catalog Grid -->
-            <div class="grid grid-cols-4 grid-rows-[275px_360px] gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-auto lg:grid-rows-[275px_360px] gap-4">
 
 
                 <!-- ================= TOP ROW ================= -->
 
                 <!-- Catalog -->
                 <div
-                    class="relative rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium">
+                    <h3 class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium">
                         Catalog
                     </h3>
 
@@ -208,35 +341,37 @@
 
                 <!-- Fruit Mixes & Salads -->
                 <div
-                    class="relative col-span-2 rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] md:col-span-1 lg:h-auto lg:col-span-2 rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium">
+                    <h3 class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium">
                         Fruit Mixes & Salads
                     </h3>
 
-                    <img src="./images/fruitmix-salad 1.png" alt="Fruit Mixes and Salads"
-                        class="absolute bottom-0 -left-45.25 w-full h-full object-contain object-center">
 
-                    <img src="./images/fruitmix-salad 2.png" alt="Fruit Mixes and Salads"
-                        class="absolute top-10 left-0 w-full h-full object-contain object-center scale-70">
+                    <img src="./images/fruitmix-salad 1.png" alt="Fruit Mixes and Salads" class="absolute bottom-0 -left-20 md:-left-30 lg:-left-45.25 w-full h-full object-contain object-center">
 
-                    <img src="./images/fruitmix-salad 3.png" alt="Fruit Mixes and Salads"
-                        class="absolute bottom-0 -right-45.25 w-full h-full object-contain object-center">
+
+                    <img src="./images/fruitmix-salad 2.png" alt="Fruit Mixes and Salads" class="absolute top-10 left-0 w-full h-full object-contain object-center scale-70">
+
+
+                    <img src="./images/fruitmix-salad 3.png" alt="Fruit Mixes and Salads" class="absolute bottom-0 -right-20 md:-right-30 lg:-right-45.25 w-full h-full object-contain object-center">
 
                 </div>
 
 
                 <!-- Smoothies & Lemonades -->
                 <div
-                    class="relative rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium leading-6">
+                    <h3
+                        class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium leading-6">
+
                         Smoothies<br>
                         & Lemonades
+
                     </h3>
 
-                    <img src="./images/smoothies-img.png" alt="Smoothies and Lemonades"
-                        class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[80%] h-[65%] object-contain">
+                    <img src="./images/smoothies-img.png" alt="Smoothies and Lemonades" class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[75%] md:w-[80%] h-[65%] object-contain">
 
                 </div>
 
@@ -245,76 +380,82 @@
 
                 <!-- Pre-Cut Vegetables -->
                 <div
-                    class="relative rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium leading-6">
-                        Pre-Cut<br>
-                        Vegetables
+                    <h3
+                        class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium leading-6">
+
+                        Pre-Cut<br>Vegetables
+
                     </h3>
 
-                    <img src="./images/precut-vegg.png" alt="Pre-Cut Vegetables"
-                        class="absolute -bottom-19 -left-12 w-full h-[70%] object-contain object-bottom">
+                    <img src="./images/precut-vegg.png" alt="Pre-Cut Vegetables" class="absolute -bottom-10 md:-bottom-14 lg:-bottom-19 -left-6 md:-left-8 lg:-left-12 w-full h-[70%] object-contain object-bottom">
 
                 </div>
 
 
                 <!-- Fresh Fruit Desserts -->
                 <div
-                    class="relative rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium">
+                    <h3 class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium">
+
                         Fresh Fruit Desserts
+
                     </h3>
 
-                    <img src="./images/fresh-fruit dessert.png" alt="Fresh Fruit Desserts"
-                        class="absolute bottom-0 -right-2 w-full h-[67%] object-contain object-bottom">
+                    <img src="./images/fresh-fruit dessert.png" alt="Fresh Fruit Desserts" class="absolute bottom-0 -right-2 w-full h-[67%] object-contain object-bottom">
 
                 </div>
 
 
                 <!-- Ready-to-Eat Meals -->
                 <div
-                    class="relative rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer">
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
-                    <h3 class="absolute top-6 left-6 z-10 text-[20px] font-medium leading-6">
-                        Ready-to-Eat<br>
-                        Meals
+                    <h3
+                        class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium leading-6">
+
+                        Ready-to-Eat <br> Meals
+
                     </h3>
 
-                    <img src="./images/ready-to-eattt.png" alt="Ready-to-Eat Meals"
-                        class="absolute -bottom-10 -right-6 w-full h-[72%] object-contain object-bottom">
+                    <img src="./images/ready-to-eattt.png" alt="Ready-to-Eat Meals" class="absolute -bottom-8 md:-bottom-9 lg:-bottom-10 -right-4 lg:-right-6 w-full h-[72%] object-contain object-bottom">
 
                 </div>
 
 
                 <!-- Full Catalog -->
-                <div class="relative rounded-[15px] overflow-hidden transition duration-500 hover:scale-103">
+                <div
+                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden transition duration-500 hover:scale-103">
 
-                    <img src="./images/image 55.jpg" alt="Full Catalog" class="w-full h-full object-cover">
+                    <img src="./images/image 55.jpg" alt="Full Catalog" class="absolute inset-0 w-full h-full object-cover">
 
-                    <!-- Button -->
-                    <div class="absolute bottom-6 left-6 right-6 flex items-center gap-2">
+                    <!-- Centered Button Group -->
+                    <div
+                        class="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center md:active:scale-95 active:scale-95">
 
-                        <!-- Full Catalog -->
-                        <button class="flex items-center justify-center gap-2 text-[#2D2D2D] font-helvetica text-[16px] leading-5.5 font-medium cursor-pointer">
+                        <!-- Main Button -->
+                        <a href="./catalogue.html" class="flex items-center justify-center">
+                            <button
+                                class="flex items-center justify-center bg-white rounded-full w-[150px] h-10 text-[#2D2D2D] font-helvetica text-[16px] leading-5.5 font-medium cursor-pointer">
 
-                            <span class="relative rounded-full border-white px-13.5 py-2 text-left bg-[#ffff]">
                                 Full Catalog
-                            </span>
 
-                            <span
-                                class="flex absolute left-48.5 h-10 w-10 items-center justify-center rounded-full bg-[#ffFF] border-white">
+                            </button>
+
+
+                            <!-- Arrow -->
+                            <span class="flex items-center justify-center w-10 h-10 bg-white rounded-full ml-0">
                                 →
                             </span>
-
-                        </button>
+                        </a>
 
                     </div>
 
                 </div>
 
             </div>
-        </div>
 
     </section>
 
@@ -324,322 +465,585 @@
 
     <section class="w-full">
         <div class="w-[90%] mx-auto">
+
             <div class="mt-10">
 
                 <!-- Heading + Full Catalog -->
                 <div class="flex items-center justify-between mb-7">
 
-                    <h2 class="text-[36px] font-medium tracking-tight">
+                    <h2 class="text-[30px] md:text-[36px] lg:text-[40px] font-medium tracking-tight">
                         Best Sellers
                     </h2>
 
-                    <button class="flex items-center gap-3 text-[14px] font-medium">
-                        <span>Full Catalog</span>
+                    <a href="./catalogue.html">
+                        <button
+                            class="flex items-center gap-2 md:gap-3 text-[13px] md:text-[14px] lg:text-[16px] font-medium">
 
-                        <span class="w-8 h-8 rounded-full bg-[#f3f3f3] flex items-center justify-center text-lg">
-                            →
-                        </span>
-                    </button>
+                            <span>Full Catalog</span>
+
+                            <span
+                                class="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full bg-[#f3f3f3] flex items-center justify-center text-base md:text-lg">
+
+                                →
+
+                            </span>
+
+                        </button>
+                    </a>
 
                 </div>
 
 
                 <!-- Products -->
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
 
 
                     <!-- Product 1 -->
-                    <div>
+                    <div class="md:active:scale-95 active:scale-95">
+
                         <div
-                            class="w-full h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
+                            class="w-full h-[180px] md:h-[240px] lg:h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
 
                             <img src="./images/best-seller1.png" alt="Fruit mix"
                                 class="w-[85%] h-[85%] object-contain transition duration-500 hover:scale-105">
 
                         </div>
 
-                        <div class="pt-4">
-                            <h3 class="text-[16px] font-medium">
+                        <div class="pt-3 md:pt-4">
+
+                            <h3 class="text-[15px] md:text-[16px] lg:text-[18px] font-medium">
                                 Fruit mix
                             </h3>
 
-                            <p class="text-[16px] text-gray-400 mt-1 font-helvetica">
+                            <p class="text-[14px] md:text-[16px] lg:text-[17px] text-gray-400 mt-1 font-helvetica">
+
                                 200 g
+
                             </p>
+
                         </div>
+
                     </div>
 
 
                     <!-- Product 2 -->
-                    <div>
+                    <div class="md:active:scale-95 active:scale-95">
+
                         <div
-                            class="w-full h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
+                            class="w-full h-[180px] md:h-[240px] lg:h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
 
                             <img src="./images/best-seller2.png" alt="Fruit mix"
                                 class="w-[85%] h-[85%] object-contain transition duration-500 hover:scale-105">
 
                         </div>
 
-                        <div class="pt-4">
-                            <h3 class="text-[16px] font-medium">
+                        <div class="pt-3 md:pt-4">
+
+                            <h3 class="text-[15px] md:text-[16px] lg:text-[18px] font-medium">
                                 Fruit mix
                             </h3>
 
-                            <p class="text-[16px] text-gray-400 mt-1 font-helvetica">
+                            <p class="text-[14px] md:text-[16px] lg:text-[17px] text-gray-400 mt-1 font-helvetica">
+
                                 200 g
+
                             </p>
+
                         </div>
+
                     </div>
 
 
                     <!-- Product 3 -->
-                    <div>
+                    <div class="md:active:scale-95 active:scale-95">
+
                         <div
-                            class="w-full h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
+                            class="w-full h-[180px] md:h-[240px] lg:h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
 
                             <img src="./images/best-seller3.png" alt="Fruit mix"
                                 class="w-[85%] h-[85%] object-contain transition duration-500 hover:scale-105">
 
                         </div>
 
-                        <div class="pt-4">
-                            <h3 class="text-[16px] font-medium">
+                        <div class="pt-3 md:pt-4">
+
+                            <h3 class="text-[15px] md:text-[16px] lg:text-[18px] font-medium">
                                 Fruit mix
                             </h3>
 
-                            <p class="text-[16px] text-gray-400 mt-1 font-helvetica">
+                            <p class="text-[14px] md:text-[16px] lg:text-[17px] text-gray-400 mt-1 font-helvetica">
+
                                 200 g
+
                             </p>
+
                         </div>
+
                     </div>
 
 
                     <!-- Product 4 -->
-                    <div>
+                    <div class="md:active:scale-95 active:scale-95">
+
                         <div
-                            class="w-full h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
+                            class="w-full h-[180px] md:h-[240px] lg:h-[285px] rounded-[15px] bg-[#f5f5f5] overflow-hidden flex items-center justify-center cursor-pointer">
 
                             <img src="./images/image-Photoroom 12s.png" alt="Fruit mix"
                                 class="w-[85%] h-[85%] object-contain transition duration-500 hover:scale-105">
 
                         </div>
 
-                        <div class="pt-4">
-                            <h3 class="text-[16px] font-medium">
+                        <div class="pt-3 md:pt-4">
+
+                            <h3 class="text-[15px] md:text-[16px] lg:text-[18px] font-medium">
                                 Fruit mix
                             </h3>
 
-                            <p class="text-[16px] text-gray-400 mt-1 font-helvetica">
+                            <p class="text-[14px] md:text-[16px] lg:text-[17px] text-gray-400 mt-1 font-helvetica">
+
                                 200 g
+
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="mt-5 flex gap-2.5 justify-end">
+
+            <!-- Bottom Buttons -->
+            <div class="mt-5 flex flex-wrap gap-2.5 justify-between lg:justify-end">
+
+                <a href="./catalogue.html">
+                    <button
+                        class="bg-[#f5f5f5] rounded-full px-5 py-2.5 text-[13px] md:text-[14px] lg:text-[15px] text-black font-medium cursor-pointer transition duration-500      hover:scale-98 whitespace-nowrap md:active:scale-95 active:scale-95">
+
+                        Where to buy?
+
+                    </button>
+                </a>
+
                 <button
-                    class="bg-[#f5f5f5] rounded-full px-5 py-2.5 text-[14px] text-black font-medium cursor-pointer transition duration-500 hover:scale-98">
-                    Where to buy?
-                </button>
-                <button
-                    class="bg-black text-white rounded-full px-5 py-2.5 text-[14px] font-medium cursor-pointer transition duration-500 hover:scale-98">
+                    class="bg-black text-white rounded-full px-5 py-2.5text-[13px] md:text-[14px] lg:text-[15px] font-medium cursor-pointer transition duration-500 hover:scale-98 whitespace-nowrap md:active:scale-95 active:scale-95">
+
                     Free Sample Batch
+
                 </button>
+
             </div>
+
         </div>
     </section>
 
-    <section class="w-full mt-20">
+    <section class="w-full mt-12 md:mt-20">
         <div class="w-[90%] mx-auto">
-            <div class="relative bg-cover rounded-2xl bg-center px-4 py-5"
+
+            <div class="relative bg-cover rounded-2xl bg-center px-3 py-4 md:px-4 md:py-5"
                 style="background-image: url('./images/close-up-orange-fruit-tree\ 1.jpg');">
+
+                <!-- Overlay -->
                 <div class="absolute inset-0 bg-black/40 rounded-2xl"></div>
 
-                <div class="relative z-10 text-white p-10 grid grid-cols-2 gap-9">
-                    <div class="flex flex-col items-start justify-between">
+
+                <!-- Main Content -->
+                <div class="relative z-10 text-white p-5 md:p-8 lg:p-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-9">
+
+                    <!-- LEFT SIDE -->
+                    <div class="flex flex-col items-start justify-between gap-12 md:gap-0">
+
+                        <!-- Heading -->
                         <div class="flex flex-col gap-5">
-                            <h2 class="font-playfair font-medium text-[42px] leading-10.5">
-                                Open for <span class="text-[#EEFF4C] italic">Partnership</span>
+
+                            <h2
+                                class="font-playfair font-medium text-[32px] md:text-[38px] lg:text-[42px] leading-8 md:leading-9 lg:leading-10.5">
+
+                                Open for
+                                <span class="text-[#EEFF4C] italic">
+                                    Partnership
+                                </span>
+
                             </h2>
-                            <p class="font-manrope text-[18px] leading-6">Sustainable production <br> of fresh snacks
-                                and ready-to-eat meals</p>
+
+                            <p class="font-manrope text-[16px] md:text-[18px] leading-6">
+                                Sustainable production <br>
+                                of fresh snacks and ready-to-eat meals
+                            </p>
+
                         </div>
+
+
+                        <!-- Offer -->
                         <div class="flex flex-col gap-5">
-                            <h3 class="font-manrope font-bold text-[24px] text-white">20% Off Your First Order</h3>
-                            <div class="flex gap-2.5">
+
+                            <h3 class="font-manrope font-bold text-[20px] md:text-[24px] text-white">
+
+                                20% Off Your First Order
+
+                            </h3>
+
+
+                            <!-- Buttons -->
+                            <div class="flex flex-wrap gap-2.5">
+
+                                <a href="./product.js">
+                                    <button
+                                        class="bg-transparent border border-white text-white font-manrope rounded-full px-4 md:px-5 py-2.5 text-[14px] md:text-[16px] font-extrabold cursor-pointer transition duration-500 active:bg-[#EEFF4C] active:text-black active:scale-98 active:border-transparent lg:hover:bg-[#EEFF4C] lg:hover:text-black lg:hover:scale-98 lg:hover:border-transparent">
+
+                                        Place an Order
+
+                                    </button>
+                                </a>
+
+
                                 <button
-                                    class="bg-transparent border border-white text-white font-manrope rounded-full px-5 py-2.5 text-[16px] transition duration-500 hover:bg-[#EEFF4C] hover:text-black hover:scale-98 hover:border-none font-extrabold cursor-pointer">
-                                    Place an Order
-                                </button>
-                                <button
-                                    class="bg-transparent border border-white text-white font-manrope rounded-full px-5 py-2.5 text-[16px] transition duration-500 hover:bg-[#EEFF4C] hover:text-black hover:scale-98 hover:border-none font-extrabold cursor-pointer">
+                                    class="bg-transparent border border-white text-white font-manrope rounded-full px-4 md:px-5 py-2.5 text-[14px] md:text-[16px] font-extrabold cursor-pointer transition duration-500 active:bg-[#EEFF4C] active:text-black active:scale-98 active:border-transparent lg:hover:bg-[#EEFF4C] lg:hover:text-black lg:hover:scale-98 lg:hover:border-transparent">
+
                                     Request a Sample Batch
+
                                 </button>
+
                             </div>
+
+
                             <a href=""
-                                class="font-manrope font-semibold text-[14px] underline cursor-pointer text-white">Read
-                                more</a>
+                                class="font-manrope font-semibold text-[14px] underline cursor-pointer text-white">
+
+                                Read more
+
+                            </a>
+
                         </div>
+
                     </div>
 
-                    <div class="grid grid-cols-2 gap-5">
+
+                    <!-- RIGHT SIDE / FEATURES -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+
+
+                        <!-- Reliable Deliveries -->
                         <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
+
                             <div class="flex flex-col gap-4 items-start justify-start p-5">
-                                <div><img src="./images/reliable-truck.png" alt="truck"></div>
-                                <h3 class="font-manrope font-bold text-[24px] text-white">Reliable <br> Deliveries</h3>
-                                <p class="font-manrope text-[18px] text-white opacity-80">Fast 24-hour delivery with
-                                    <br> a full production cycle <br> from 10,000 kg
-                                </p>
-                            </div>
-                        </div>
-                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
-                            <div class="flex flex-col gap-4 items-start justify-start p-5">
-                                <div><img src="./images/personalized-approach.png" alt="user"></div>
-                                <h3 class="font-manrope font-bold text-[24px] text-white">Personalized <br> Approach
+
+                                <div>
+                                    <img src="./images/reliable-truck.png" alt="truck">
+                                </div>
+
+                                <h3 class="font-manrope font-bold text-[20px] md:text-[24px] text-white">
+
+                                    Reliable <br>
+                                    Deliveries
+
                                 </h3>
-                                <p class="font-manrope text-[18px] text-white opacity-80">Creating tailored <br>
-                                    solutions for your <br> business needs</p>
-                            </div>
-                        </div>
-                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
-                            <div class="flex flex-col gap-4 items-start justify-start p-5">
-                                <div><img src="./images/Vectortimer.png" alt="timer"></div>
-                                <h3 class="font-manrope font-bold text-[24px] text-white">Trial <br> Period</h3>
-                                <p class="font-manrope text-[18px] text-white opacity-80">We handle the <br> complexity
-                                    <br> for you
-                                </p>
-                            </div>
-                        </div>
-                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
-                            <div class="flex flex-col gap-4 items-start justify-start p-5">
-                                <div><img src="./images/A-under.png" alt="A"></div>
-                                <h3 class="font-manrope font-bold text-[24px] text-white">Under <br> Your Brand</h3>
-                                <p class="font-manrope text-[18px] text-white opacity-80">We’ll customize <br> products
-                                    with your <br> branding and concept</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+                                <p class="font-manrope text-[16px] md:text-[18px] text-white opacity-80">
+
+                                    Fast 24-hour delivery with
+                                    <br>
+                                    a full production cycle
+                                    <br>
+                                    from 10,000 kg
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Personalized Approach -->
+                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
+
+                            <div class="flex flex-col gap-4 items-start justify-start p-5">
+
+                                <div>
+                                    <img src="./images/personalized-approach.png" alt="user">
+                                </div>
+
+                                <h3 class="font-manrope font-bold text-[20px] md:text-[24px] text-white">
+
+                                    Personalized <br>
+                                    Approach
+
+                                </h3>
+
+                                <p class="font-manrope text-[16px] md:text-[18px] text-white opacity-80">
+
+                                    Creating tailored
+                                    <br>
+                                    solutions for your
+                                    <br>
+                                    business needs
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Trial Period -->
+                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
+
+                            <div class="flex flex-col gap-4 items-start justify-start p-5">
+
+                                <div>
+                                    <img src="./images/Vectortimer.png" alt="timer">
+                                </div>
+
+                                <h3 class="font-manrope font-bold text-[20px] md:text-[24px] text-white">
+
+                                    Trial <br>
+                                    Period
+
+                                </h3>
+
+                                <p class="font-manrope text-[16px] md:text-[18px] text-white opacity-80">
+
+                                    We handle the
+                                    <br>
+                                    complexity
+                                    <br>
+                                    for you
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Under Your Brand -->
+                        <div class="bg-[#57A24D] rounded-2xl transition duration-500 hover:scale-103 cursor-pointer">
+
+                            <div class="flex flex-col gap-4 items-start justify-start p-5">
+
+                                <div>
+                                    <img src="./images/A-under.png" alt="A">
+                                </div>
+
+                                <h3 class="font-manrope font-bold text-[20px] md:text-[24px] text-white">
+
+                                    Under <br>
+                                    Your Brand
+
+                                </h3>
+
+                                <p class="font-manrope text-[16px] md:text-[18px] text-white opacity-80">
+
+                                    We’ll customize
+                                    <br>
+                                    products with your
+                                    <br>
+                                    branding and concept
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
     </section>
 
-    <section class="w-full mt-20">
+    <section class="w-full mt-12 md:mt-20">
         <div class="w-[90%] mx-auto flex flex-col gap-5">
-            <div class="flex items-start justify-between">
-                <div>
-                    <h3 class="font-manrope font-semibold text-[42px] text-black leading-11">How We Create <br> <span
-                            class="font-playfair font-medium italic text-[#F27147]">Our Products</span></h3>
-                </div>
-                <div class="font-manrope text-black text-[18px] flex flex-col gap-5">
-                    <p class="leading-6">Our products are crafted in a modern in-house production facility spanning
-                        1,700 m². <br> We manage and control every stage of production</p>
 
-                    <a href="" class="underline">Learn More</a>
+            <!-- Heading + Description -->
+            <div class="flex flex-col md:flex-row items-start justify-between gap-8">
+
+                <!-- Heading -->
+                <div>
+                    <h3
+                        class="font-manrope font-semibold text-[32px] md:text-[38px] lg:text-[42px] text-black leading-9 md:leading-10 lg:leading-11">
+
+                        How We Create <br>
+
+                        <span class="font-playfair font-medium italic text-[#F27147]">
+                            Our Products
+                        </span>
+
+                    </h3>
                 </div>
+
+
+                <!-- Description -->
+                <div class="font-manrope text-black text-[16px] md:text-[18px] flex flex-col gap-4 md:gap-5">
+
+                    <p class="leading-6">
+
+                        Our products are crafted in a modern in-house production
+                        facility spanning 1,700 m².
+
+                        <br class="hidden md:block">
+
+                        We manage and control every stage of production
+
+                    </p>
+
+                    <a href="" class="underline">
+                        Learn More
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="w-full h-screen">
+
+            <!-- Video -->
+            <div class="w-full h-[300px] md:h-[400px] lg:h-screen">
+
                 <iframe src="https://www.youtube.com/embed/yFhu3dm0224?si=-IRrwkNWanCgBvow" title="YouTube video player"
                     class="w-full h-full rounded-2xl" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
+
             </div>
 
         </div>
     </section>
 
     <!-- ================= RECIPE & MORE ================= -->
-    <section class="w-full mt-20 bg-[#F94A4A] rounded-t-2xl">
-        <div class="w-[90%] mx-auto py-10">
-            <div class="flex items-end justify-between mb-7">
-                <div class="flex flex-col gap-5">
-                    <h2 class="font-playfair text-[42px] font-medium leading-11.25">
-                        <span class="text-[#EEFF4C] italic">Recipes</span>
-                        <span class="text-white font-helvetica">& More</span>
+    <section class="w-full mt-12 md:mt-20 bg-[#F94A4A] rounded-t-2xl">
+
+        <div class="w-[90%] mx-auto py-8 md:py-10 lg:py-12">
+
+            <!-- Heading + Description -->
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-7">
+
+                <div class="flex flex-col gap-4 md:gap-5">
+
+                    <h2
+                        class="font-playfair text-[34px] md:text-[38px] lg:text-[42px] font-medium leading-9 md:leading-10 lg:leading-11.25">
+
+                        <span class="text-[#EEFF4C] italic">
+                            Recipes
+                        </span>
+
+                        <span class="text-white font-helvetica">
+                            & More
+                        </span>
+
                     </h2>
 
-                    <p class="text-[#FCFCFC] text-[18px] font-manrope leading-6">
-                        We know that improving the quality of everyday life is possible, even when there is no time,
-                        <br> and a healthy lifestyle is not difficult and not boring if you know how to incorporate it
-                        into <br> your daily routine. In the ЖИЗНЬ С FRESCO blog, we share useful recipes, workouts, and
-                        life <br> hacks for taking care of your health.
+
+                    <p class="text-[#FCFCFC] text-[15px] md:text-[16px] lg:text-[18px] font-manrope leading-6">
+
+                        We know that improving the quality of everyday life is possible, even when there is no time, and
+                        a healthy lifestyle is not difficult and not boring if you know how to incorporate it into your
+                        daily routine. In the ЖИЗНЬ С FRESCO blog, we share useful recipes, workouts, and life hacks for
+                        taking care of your health.
+
                     </p>
+
                 </div>
 
+
+                <!-- Desktop Blog Link -->
                 <a href="#"
-                    class="hidden md:block font-manrope text-white font-semibold text-[14px] leading-5 underline hover:no-underline transition duration-500 hover:scale-96">
+                    class="hidden md:block shrink-0 font-manrope text-white font-semibold text-[14px] leading-5 underline hover:no-underline transition duration-500 hover:scale-96">
+
                     go to blog
+
                 </a>
+
             </div>
 
 
-            <!-- Recipe grid -->
-            <div class="flex flex-col md:flex-row gap-2 md:aspect-video">
+            <!-- Recipe Grid -->
+            <div class="flex flex-col md:flex-row gap-2">
+
 
                 <!-- LEFT CARD -->
                 <div id="recipeStatus"
-                    class="relative md:basis-[58%] flex-1 rounded-xl overflow-hidden group select-none touch-pan-y">
+                    class="relative w-full md:basis-[58%] h-[400px] md:h-auto md:aspect-[1/1] rounded-xl overflow-hidden group select-none touch-pan-y">
 
                     <img id="recipeStatusImage" src="./images/sweet-autumn-salad.jpg" alt="Sweet Autumn Salad"
                         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
 
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20"></div>
 
-                    <!-- progress bars -->
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20">
+                    </div>
+
+
+                    <!-- Progress Bars -->
                     <div id="recipeProgress" class="absolute top-3 left-3 right-3 z-20 flex gap-1">
                     </div>
 
-                    <!-- Recipe information -->
-                    <div class="absolute top-10 left-4 right-4 flex justify-between items-center z-10">
 
-                        <span id="recipeCategory" class="text-white font-bold leading-5.5 font-manrope text-[18px]">
+                    <!-- Recipe Information -->
+                    <div class="absolute top-9 md:top-10 left-4 right-4 flex justify-between items-center z-10 gap-3">
+
+                        <span id="recipeCategory"
+                            class="text-white font-bold leading-5.5 font-manrope text-[16px] md:text-[18px]">
+
                             Recipe
+
                         </span>
 
+
                         <span id="recipeTime"
-                            class="bg-white rounded-full px-3 py-1 font-helvetica leading-5 text-[14px] font-medium text-black flex items-center gap-1">
+                            class="bg-white rounded-full px-2.5 md:px-3 py-1 font-helvetica leading-5 text-[12px] md:text-[14px] font-medium text-black flex items-center gap-1 shrink-0">
 
-                            <img src="./images/10-minute timer.png" alt="timer" class="">
+                            <img src="./images/10-minute timer.png" alt="timer">
 
-                            <span id="recipeTimeText">10 minutes</span>
+                            <span id="recipeTimeText">
+                                10 minutes
+                            </span>
 
                         </span>
 
                     </div>
 
+
+                    <!-- Previous -->
                     <button id="recipePrev" class="absolute left-0 top-0 bottom-0 w-1/3 z-10 cursor-pointer"
                         aria-label="Previous recipe">
                     </button>
 
+
+                    <!-- Next -->
                     <button id="recipeNext" class="absolute right-0 top-0 bottom-0 w-1/3 z-10 cursor-pointer"
                         aria-label="Next recipe">
                     </button>
 
-                    <div class="absolute bottom-6 left-5 z-10">
-                        <h2 id="recipeTitle" class="text-[#FFFFFF] text-[42px] font-semibold leading-11.25">
+
+                    <!-- Recipe Title -->
+                    <div class="absolute bottom-5 md:bottom-6 left-4 md:left-5 z-10">
+
+                        <h2 id="recipeTitle"
+                            class="text-white text-[32px] md:text-[38px] lg:text-[42px] font-semibold leading-8 md:leading-10 lg:leading-11.25">
+
                             Sweet
                             <br>
                             Autumn
                             <br>
                             Salad
+
                         </h2>
+
                     </div>
 
                 </div>
 
 
                 <!-- RIGHT SIDE -->
-                <div class="md:basis-[42%] flex-1 flex flex-col gap-2">
+                <div class="w-full md:basis-[42%] flex flex-col gap-2">
 
                     <!-- TOP CARD -->
-                    <a href="#" class="relative flex-1 rounded-xl overflow-hidden group">
+                    <a href="#" class="relative h-[280px] md:h-auto md:flex-1 rounded-xl overflow-hidden group">
 
                         <img src="./images/image 53.jpg" alt="Fresh Fruit"
                             class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
@@ -647,23 +1051,30 @@
                         <div class="absolute inset-0 bg-black/20"></div>
 
                         <div class="absolute left-4 bottom-4 right-4">
-                            <h3 class="text-[#FFFFFF] font-manrope text-[24px] font-bold leading-6.75">
+
+                            <h3
+                                class="text-white font-manrope text-[20px] md:text-[22px] lg:text-[24px] font-bold leading-6">
+
                                 What Happens When
                                 <br>
                                 You Start Your Morning
                                 <br>
                                 with Fresh Fruit?
+
                             </h3>
+
                         </div>
 
                     </a>
 
 
                     <!-- BOTTOM CARDS -->
-                    <div class="flex flex-1 gap-2">
+                    <div class="flex flex-col md:flex-row flex-1 gap-2">
+
 
                         <!-- HEALTHY SNACK -->
-                        <a href="#" class="basis-1/2 relative rounded-xl overflow-hidden group">
+                        <a href="#"
+                            class="relative w-full md:basis-1/2 h-[280px] md:h-auto rounded-xl overflow-hidden group">
 
                             <img src="./images/image 67.jpg" alt="Healthy Snack"
                                 class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
@@ -671,13 +1082,17 @@
                             <div class="absolute inset-0 bg-black/25"></div>
 
                             <div class="absolute bottom-4 left-3 right-3">
-                                <h3 class="text-white text-[24px] font-bold leading-6.75">
+
+                                <h3 class="text-white text-[20px] md:text-[22px] lg:text-[24px] font-bold leading-6">
+
                                     5 Minutes for
                                     <br>
                                     a Healthy Snack
                                     <br>
                                     Every Day
+
                                 </h3>
+
                             </div>
 
                         </a>
@@ -685,14 +1100,16 @@
 
                         <!-- CHECKLIST -->
                         <a href="#"
-                            class="basis-1/2 relative rounded-xl overflow-hidden bg-[#EEFF4C] group transition duration-500 group-hover:scale-105">
+                            class="basis-1/2 relative h-[280px] md:h-auto rounded-xl overflow-hidden bg-[#EEFF4C] group transition duration-500 group-hover:scale-105">
 
                             <img src="./images/checklist-layer1.png" alt="layer" class="absolute left-0 top-4">
 
                             <img src="./images/checklist-layer2.png" alt="layer" class="absolute right-0">
 
                             <div class="absolute bottom-4 left-3 right-3">
-                                <h3 class="text-black text-[24px] font-bold leading-6.75">
+
+                                <h3 class="text-black text-[20px] md:text-[22px] lg:text-[24px] font-bold leading-6">
+
                                     Checklist: Essential
                                     <br>
                                     Health Tests for
@@ -700,7 +1117,9 @@
                                     Nutrition-Conscious
                                     <br>
                                     People
+
                                 </h3>
+
                             </div>
 
                         </a>
@@ -712,45 +1131,67 @@
             </div>
 
 
-            <!-- Mobile blog link -->
-            <a href="#" class="md:hidden block text-white text-[10px] underline mt-5">
+            <!-- Mobile Blog Link -->
+            <a href="#" class="md:hidden block text-white text-[12px] underline mt-5">
+
                 go to blog
+
             </a>
 
         </div>
+
     </section>
 
-    <section class="w-full mt-20">
+    <section class="w-full mt-12 md:mt-20">
+
         <div class="w-[90%] mx-auto">
-            <h2 class="text-[42px] font-manrope pb-6 font-medium leading-11.25 text-[#2d2d2d]">
+
+            <!-- Heading -->
+            <h2
+                class="text-[32px] md:text-[42px] font-manrope pb-5 md:pb-6 font-medium leading-9 md:leading-11.25 text-[#2d2d2d]">
+
                 Our Location
+
             </h2>
-            <div class="w-full h-screen">
+
+
+            <!-- Map -->
+            <div class="w-full h-[350px] md:h-[550px] lg:h-screen">
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15797.934235471284!2d4.241004065717528!3d8.15393732411217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10370d2cebd3dbdb%3A0xc02d6d9ddb2d2f7f!2sAlice%20Place!5e0!3m2!1sen!2sng!4v1787175740815!5m2!1sen!2sng"
                     class="w-full h-full rounded-2xl" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
             </div>
+
         </div>
+
     </section>
 
-    <footer class="w-full bg-[#2D2D2D] mt-20">
-        <div class="w-[90%] mx-auto flex py-10">
+    <footer class="w-full bg-[#2D2D2D] mt-12 md:mt-20">
 
-            <!-- Logo-->
-            <div class="basis-[50%] text-white flex flex-col items-start gap-8">
+        <div class="w-[90%] mx-auto flex flex-col md:flex-row py-8 md:py-10 gap-10 md:gap-0">
+
+            <!-- Logo / Address -->
+            <div class="w-full md:basis-[40%] lg:basis-[50%] text-white flex flex-col items-start gap-6 md:gap-8">
 
                 <div>
-                    <h3 class="font-manrope font-medium text-[45px]">
+                    <h3 class="font-manrope font-medium text-[36px] md:text-[42px] lg:text-[45px]">
+
                         logo
+
                     </h3>
                 </div>
 
                 <div>
-                    <p class="font-manrope font-semibold text-[14px] leading-5.5">
+                    <p class="font-manrope font-semibold text-[13px] md:text-[14px] leading-5.5">
+
                         4517 Washington Ave. Manchester, <br>
                         Kentucky <br>
                         39495
+
                     </p>
                 </div>
 
@@ -758,79 +1199,87 @@
 
 
             <!-- Footer Links -->
-            <div class="basis-[50%] flex font-manrope text-white">
+            <div
+                class="w-full md:basis-[60%] lg:basis-[50%] grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-5 font-manrope text-white">
+
 
                 <!-- Home -->
-                <div class="basis-[33.33%] flex flex-col gap-4">
+                <div class="flex flex-col gap-4">
 
-                    <h4 class="font-bold text-[18px]">
+                    <h4 class="font-bold text-[17px] md:text-[18px]">
                         Home
                     </h4>
 
                     <div class="flex flex-col gap-2">
-                        <a href="" class="font-semibold text-[14px]">
+
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Catalog
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             About
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Our production
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Recipes
                         </a>
+
                     </div>
 
                 </div>
 
 
                 <!-- Blog -->
-                <div class="basis-[33.33%] flex flex-col gap-4">
+                <div class="flex flex-col gap-4">
 
-                    <h4 class="font-bold text-[18px]">
+                    <h4 class="font-bold text-[17px] md:text-[18px]">
                         Blog
                     </h4>
 
                     <div class="flex flex-col gap-2">
-                        <a href="" class="font-semibold text-[14px]">
+
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Partnership
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Career
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Job
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Download catalog
                         </a>
+
                     </div>
 
                 </div>
 
 
                 <!-- Contact -->
-                <div class="basis-[33.33%] flex flex-col gap-4">
+                <div class="flex flex-col gap-4">
 
-                    <h4 class="font-bold text-[18px]">
+                    <h4 class="font-bold text-[17px] md:text-[18px]">
                         Contact
                     </h4>
 
                     <div class="flex flex-col gap-2">
-                        <a href="" class="font-semibold text-[14px]">
+
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Instagram
                         </a>
 
-                        <a href="" class="font-semibold text-[14px]">
+                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
                             Facebook
                         </a>
+
                     </div>
 
                 </div>
@@ -838,6 +1287,7 @@
             </div>
 
         </div>
+
     </footer>
 
 

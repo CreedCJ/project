@@ -11,29 +11,56 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2506f6b6f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="w-full shadow">
+    <section class="w-full shadow relative">
         <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
-            <div class="flex gap-3">
+
+            <!-- Hamburger -->
+            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Left Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="">catalogue</a>
                 <a href="">about</a>
                 <a href="">careers</a>
             </div>
+
+            <!-- Logo -->
             <div>
-                <h1 class="text-5xl">logo</h1>
+                <h1 class="text-4xl md:text-5xl">logo</h1>
             </div>
-            <div class="flex gap-3">
+
+            <!-- Right Navigation - Desktop -->
+            <div class="hidden md:flex lg:flex gap-3">
                 <a href="">contacts</a>
                 <a href="">production</a>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
+
+                <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
+                    <a href="">catalogue</a>
+                    <a href="">about</a>
+                    <a href="">careers</a>
+                    <a href="">contacts</a>
+                    <a href="">production</a>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
     <div class="w-full my-10">
         <div class="w-[90%] mx-auto font-semibold text-[14px] text-[#57A24D] mb-6 leading-5.5">
-            <p><a href="./index.html">Home page</a> / <a href="./catalogue.html">catalog</a> / Fruits <span class="text-[#2d2d2d]">/ Fruit mix</span> </p>
+            <p><a href="./index.html">Home page</a> / <a href="./catalogue.html">catalog</a> <a href="./product.html">/
+                    Fruits</a> <span class="text-[#2d2d2d]"><a href="./product.html">/ Fruit mix</a></span> </p>
         </div>
     </div>
 
