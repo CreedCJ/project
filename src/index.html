@@ -142,11 +142,11 @@
                 </a>
 
                 <div class="opacity-10">
-                    <img src="./images/5-years vector.png" alt="jpeg" class="absolute top-38.75 right-0">
+                    <img src="./images/5-years vector.png" alt="jpeg" class="absolute top-38.75 right-0 scale-180 md:scale-180 lg:scale-100">
 
-                    <img src="./images/5-years vector 2.png" alt="jpeg" class="absolute top-23.5 left-42.5">
+                    <img src="./images/5-years vector 2.png" alt="jpeg" class="absolute top-23.5 left-42.5 scale-180 md:scale-180 lg:scale-100">
 
-                    <img src="./images/5-years vector 3.png" alt="jpeg" class="absolute top-13 left-56.5">
+                    <img src="./images/5-years vector 3.png" alt="jpeg" class="absolute top-13 left-56.5 scale-140 scale-x-230 md:scale-100 md:scale-x-230 lg:scale-100 lg:scale-x-100">
                 </div>
 
             </div>
@@ -247,15 +247,15 @@
 
         <!-- Main Content -->
         <div
-            class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0 py-8 md:py-10 lg:py-12">
+            class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-5 py-8 md:py-10 lg:py-12">
 
 
             <!-- Text -->
             <div class="flex flex-col gap-10 md:gap-15 text-white w-full md:w-auto">
 
-                <p class="leading-9 md:leading-11 text-[32px] md:text-[38px] lg:text-[42px]">
+                <p class="leading-9 md:leading-11 text-[38px] md:text-[33px] lg:text-[42px]">
 
-                    Fresh snacks are a daily <br>
+                    Fresh snacks are a daily <br class="lg:block md:hidden hidden">
 
                     <span class="text-[#EEFF4C] italic font-playfair">
                         act of care
@@ -268,10 +268,10 @@
                 </p>
 
 
-                <p class="font-manrope text-[16px] md:text-[18px] leading-6">
+                <p class="font-manrope text-[16px] md:text-[16px] lg::text-[18px] leading-6">
 
                     We make healthy snacking an easy
-                    <br class="hidden md:block">
+                    <br class="hidd md:block">
                     everyday choice
 
                 </p>
@@ -280,28 +280,18 @@
 
 
             <!-- Images -->
-            <div class="relative w-full md:w-[45%] lg:w-auto flex justify-center">
-
-
-                <!-- Main Image -->
-                <div
-                    class="rounded-2xl w-full max-w-[500px] md:w-[350px] lg:w-[500px] h-[300px] md:h-[320px] lg:h-[420px]">
-
+            <div class="relative flex justify-end">
+                <div class="w-full max-w-[500px] overflow-hidden rounded-2xl">
                     <img src="../src/images/cheerful-gardner.png" alt="farm worker"
-                        class="object-contain w-full h-full rounded-2xl">
-
-                </div>
-
-
-                <!-- Berries Image -->
-                <div
-                    class="absolute w-[140px] h-[150px] md:w-[150px] md:h-[165px] lg:w-[225px] lg:h-[241px] rotate-8 top-[220px] md:top-[170px] lg:top-39 right-[-10px] md:-right-5 lg:right-auto lg:left-153.25 bg-transparent">
-
-                    <img src="./images/berries-picture.png" alt="rotate-img"
                         class="w-full h-full object-cover rounded-2xl">
-
                 </div>
 
+                <div class="absolute lg:top-[45%] lg:-left-25 -rotate-11 overflow-hidden rounded-2xl hidden md:hidden lg:block">
+                    <div class="w-[180px] h-[180px]">
+                        <img src="./images/berries-picture.png" alt="rotate-img"
+                            class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -327,7 +317,7 @@
 
                 <!-- Catalog -->
                 <div
-                    class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
+                    class="relative h-[300px] md:hidden lg:block lg:h-auto rounded-[15px] overflow-hidden bg-[#f5f5f5] transition duration-500 hover:scale-103 cursor-pointer md:active:scale-95 active:scale-95">
 
                     <h3 class="absolute top-5 left-5 md:top-6 md:left-6 z-10 text-[18px] md:text-[20px] font-medium">
                         Catalog
@@ -348,13 +338,16 @@
                     </h3>
 
 
-                    <img src="./images/fruitmix-salad 1.png" alt="Fruit Mixes and Salads" class="absolute bottom-0 -left-20 md:-left-30 lg:-left-45.25 w-full h-full object-contain object-center">
+                    <img src="./images/fruitmix-salad 1.png" alt="Fruit Mixes and Salads"
+                        class="absolute bottom-0 -left-20 md:-left-30 lg:-left-45.25 w-full h-full object-contain object-center">
 
 
-                    <img src="./images/fruitmix-salad 2.png" alt="Fruit Mixes and Salads" class="absolute top-10 left-0 w-full h-full object-contain object-center scale-70">
+                    <img src="./images/fruitmix-salad 2.png" alt="Fruit Mixes and Salads"
+                        class="absolute top-10 left-0 w-full h-full object-contain object-center scale-70 md:hidden hidden lg:block">
 
 
-                    <img src="./images/fruitmix-salad 3.png" alt="Fruit Mixes and Salads" class="absolute bottom-0 -right-20 md:-right-30 lg:-right-45.25 w-full h-full object-contain object-center">
+                    <img src="./images/fruitmix-salad 3.png" alt="Fruit Mixes and Salads"
+                        class="absolute bottom-0 -right-20 md:-right-30 lg:-right-45.25 w-full h-full object-contain object-center">
 
                 </div>
 
@@ -371,7 +364,8 @@
 
                     </h3>
 
-                    <img src="./images/smoothies-img.png" alt="Smoothies and Lemonades" class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[75%] md:w-[80%] h-[65%] object-contain">
+                    <img src="./images/smoothies-img.png" alt="Smoothies and Lemonades"
+                        class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[75%] md:w-[80%] h-[65%] object-contain">
 
                 </div>
 
@@ -389,7 +383,8 @@
 
                     </h3>
 
-                    <img src="./images/precut-vegg.png" alt="Pre-Cut Vegetables" class="absolute -bottom-10 md:-bottom-14 lg:-bottom-19 -left-6 md:-left-8 lg:-left-12 w-full h-[70%] object-contain object-bottom">
+                    <img src="./images/precut-vegg.png" alt="Pre-Cut Vegetables"
+                        class="absolute -bottom-10 md:-bottom-14 lg:-bottom-19 -left-6 md:-left-8 lg:-left-12 w-full h-[70%] object-contain object-bottom">
 
                 </div>
 
@@ -404,7 +399,8 @@
 
                     </h3>
 
-                    <img src="./images/fresh-fruit dessert.png" alt="Fresh Fruit Desserts" class="absolute bottom-0 -right-2 w-full h-[67%] object-contain object-bottom">
+                    <img src="./images/fresh-fruit dessert.png" alt="Fresh Fruit Desserts"
+                        class="absolute bottom-0 -right-2 w-full h-[67%] object-contain object-bottom">
 
                 </div>
 
@@ -420,7 +416,8 @@
 
                     </h3>
 
-                    <img src="./images/ready-to-eattt.png" alt="Ready-to-Eat Meals" class="absolute -bottom-8 md:-bottom-9 lg:-bottom-10 -right-4 lg:-right-6 w-full h-[72%] object-contain object-bottom">
+                    <img src="./images/ready-to-eattt.png" alt="Ready-to-Eat Meals"
+                        class="absolute -bottom-8 md:-bottom-9 lg:-bottom-10 -right-4 lg:-right-6 w-full h-[72%] object-contain object-bottom">
 
                 </div>
 
@@ -429,7 +426,8 @@
                 <div
                     class="relative h-[300px] md:h-[320px] lg:h-auto rounded-[15px] overflow-hidden transition duration-500 hover:scale-103">
 
-                    <img src="./images/image 55.jpg" alt="Full Catalog" class="absolute inset-0 w-full h-full object-cover">
+                    <img src="./images/image 55.jpg" alt="Full Catalog"
+                        class="absolute inset-0 w-full h-full object-cover">
 
                     <!-- Centered Button Group -->
                     <div
@@ -477,7 +475,7 @@
 
                     <a href="./catalogue.html">
                         <button
-                            class="flex items-center gap-2 md:gap-3 text-[13px] md:text-[14px] lg:text-[16px] font-medium">
+                            class="flex items-center gap-2 md:gap-3 text-[13px] md:text-[14px] lg:text-[16px] font-medium cursor-pointer">
 
                             <span>Full Catalog</span>
 
@@ -649,7 +647,8 @@
 
 
                 <!-- Main Content -->
-                <div class="relative z-10 text-white p-5 md:p-8 lg:p-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-9">
+                <div
+                    class="relative z-10 text-white p-5 md:p-8 lg:p-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-9">
 
                     <!-- LEFT SIDE -->
                     <div class="flex flex-col items-start justify-between gap-12 md:gap-0">
@@ -688,7 +687,7 @@
                             <!-- Buttons -->
                             <div class="flex flex-wrap gap-2.5">
 
-                                <a href="./product.js">
+                                <a href="./product.html">
                                     <button
                                         class="bg-transparent border border-white text-white font-manrope rounded-full px-4 md:px-5 py-2.5 text-[14px] md:text-[16px] font-extrabold cursor-pointer transition duration-500 active:bg-[#EEFF4C] active:text-black active:scale-98 active:border-transparent lg:hover:bg-[#EEFF4C] lg:hover:text-black lg:hover:scale-98 lg:hover:border-transparent">
 

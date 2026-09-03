@@ -388,3 +388,20 @@ const menuBtn = document.getElementById("menuBtn");
     menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
     });
+
+
+
+
+const likeButtons = document.querySelectorAll(".likeButton");
+
+    likeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            if (button.textContent.trim() === "♡") {
+                button.textContent = "♥";
+                button.classList.add("text-red-500");
+            } else {
+                button.textContent = "♡";
+                button.classList.remove("text-red-500");
+            }
+        });
+    });

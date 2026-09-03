@@ -76,3 +76,19 @@ function closeCatalogSidebar() {
 catalogMenuBtn?.addEventListener("click", openCatalogSidebar);
 closeSidebar?.addEventListener("click", closeCatalogSidebar);
 sidebarOverlay?.addEventListener("click", closeCatalogSidebar);
+
+
+
+const likeButtons = document.querySelectorAll(".likeButton");
+
+    likeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            if (button.textContent.trim() === "♡") {
+                button.textContent = "♥";
+                button.classList.add("text-red-500");
+            } else {
+                button.textContent = "♡";
+                button.classList.remove("text-red-500");
+            }
+        });
+    });
