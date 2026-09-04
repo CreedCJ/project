@@ -15,11 +15,12 @@
 </head>
 
 <body>
-    <section class="w-full shadow relative">
-        <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
+    <section class="w-full shadow relative z-100">
+        <!-- Navbar -->
+        <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium relative z-110">
 
             <!-- Hamburger -->
-            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl">
+            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl relative z-120 cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -32,7 +33,7 @@
 
             <!-- Logo -->
             <div>
-                <h1 class="text-4xl md:text-5xl">logo</h1>
+                <h1 class="text-3xl md:text-5xl">logo</h1>
             </div>
 
             <!-- Right Navigation - Desktop -->
@@ -41,19 +42,27 @@
                 <a href="">production</a>
             </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
+        </div>
 
-                <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
-                    <a href="./index.html">Home</a>
-                    <a href="">about</a>
-                    <a href="">careers</a>
-                    <a href="">contacts</a>
-                    <a href="">production</a>
-                </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed top-[58px] left-0 z-[90] w-screen -translate-x-full overflow-hidden bg-white shadow-lg transition-transform duration-700 ease-in-out">
+            <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
+                <a href="./index.html"
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">Home</a>
 
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">about</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">careers</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">contacts</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">production</a>
             </div>
-
         </div>
     </section>
 
@@ -87,7 +96,7 @@
 
                 <!-- ================= SIDEBAR ================= -->
                 <aside id="catalogSidebar"
-                    class="fixed md:static top-0 left-0 z-[60] md:z-auto h-full md:h-auto w-[80%] md:w-auto max-w-[320px] md:max-w-none bg-white md:bg-transparent p-6 md:p-0 shadow-xl md:shadow-none -translate-x-full md:translate-x-0 transition-transform duration-500 ease-in-out overflow-y-auto md:overflow-visible">
+                    class="fixed md:static top-0 left-0 z-200 md:z-auto h-full md:h-auto w-[80%] md:w-auto max-w-[320px] md:max-w-none bg-white md:bg-transparent p-6 md:p-0 shadow-xl md:shadow-none -translate-x-full md:translate-x-0 transition-transform duration-500 ease-in-out overflow-y-auto md:overflow-visible">
 
                     <div class="flex items-center justify-between md:block mb-5">
                         <h2 class="text-[32px] md:text-[38px] lg:text-[42px] font-manrope font-semibold text-[#57A24D]">
@@ -896,7 +905,7 @@
 
                     <div class="flex flex-col gap-2">
 
-                        <a href="" class="font-semibold text-[13px] md:text-[14px]">
+                        <a href="./catalogue.html" class="font-semibold text-[13px] md:text-[14px]">
                             Catalog
                         </a>
 

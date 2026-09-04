@@ -284,8 +284,9 @@ showRecipe(0);
 
 
 const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("-translate-x-full");
+    mobileMenu.classList.toggle("translate-x-0");
+});

@@ -15,18 +15,19 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <section class="w-full shadow relative">
-        <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium">
+    <section class="w-full shadow relative z-100">
+        <!-- Navbar -->
+        <div class="w-[90%] mx-auto flex justify-between items-center py-3 font-medium relative z-110">
 
             <!-- Hamburger -->
-            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl">
+            <button id="menuBtn" class="lg:hidden md:hidden block text-2xl relative z-120 cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <!-- Left Navigation - Desktop -->
             <div class="hidden md:flex lg:flex gap-3">
                 <a href="./catalogue.html">catalogue</a>
-                <a href="">about</a>
+                <a href="#about">about</a>
                 <a href="">careers</a>
             </div>
 
@@ -37,23 +38,31 @@
 
             <!-- Right Navigation - Desktop -->
             <div class="hidden md:flex lg:flex gap-3">
-                <a href="">contacts</a>
-                <a href="">production</a>
+                <a href="#location">contacts</a>
+                <a href="#production">production</a>
             </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
+        </div>
 
-                <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
-                    <a href="./catalogue.html">catalogue</a>
-                    <a href="">about</a>
-                    <a href="">careers</a>
-                    <a href="">contacts</a>
-                    <a href="">production</a>
-                </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed top-[58px] left-0 z-[90] w-screen -translate-x-full overflow-hidden bg-white shadow-lg transition-transform duration-700 ease-in-out">
+            <div class="w-[90%] mx-auto flex flex-col py-5 gap-5">
+                <a href="./catalogue.html"
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">catalog</a>
 
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">about</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">careers</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">contacts</a>
+
+                <a href=""
+                    class="font-manrope text-[#2D2D2D] capitalize transition duration-500 hover:text-[#59A94F] hover:translate-x-2 active:text-[#59A94F] active:translate-x-5 active:scale-95">production</a>
             </div>
-
         </div>
     </section>
 
@@ -142,11 +151,14 @@
                 </a>
 
                 <div class="opacity-10">
-                    <img src="./images/5-years vector.png" alt="jpeg" class="absolute top-38.75 right-0 scale-180 md:scale-180 lg:scale-100">
+                    <img src="./images/5-years vector.png" alt="jpeg"
+                        class="absolute top-38.75 right-0 scale-180 md:scale-180 lg:scale-100">
 
-                    <img src="./images/5-years vector 2.png" alt="jpeg" class="absolute top-23.5 left-42.5 scale-180 md:scale-180 lg:scale-100">
+                    <img src="./images/5-years vector 2.png" alt="jpeg"
+                        class="absolute top-23.5 left-42.5 scale-180 md:scale-180 lg:scale-100">
 
-                    <img src="./images/5-years vector 3.png" alt="jpeg" class="absolute top-13 left-56.5 scale-140 scale-x-230 md:scale-100 md:scale-x-230 lg:scale-100 lg:scale-x-100">
+                    <img src="./images/5-years vector 3.png" alt="jpeg"
+                        class="absolute top-13 left-56.5 scale-140 scale-x-230 md:scale-100 md:scale-x-230 lg:scale-100 lg:scale-x-100">
                 </div>
 
             </div>
@@ -286,7 +298,8 @@
                         class="w-full h-full object-cover rounded-2xl">
                 </div>
 
-                <div class="absolute lg:top-[45%] lg:-left-25 -rotate-11 overflow-hidden rounded-2xl hidden md:hidden lg:block">
+                <div
+                    class="absolute lg:top-[45%] lg:-left-25 -rotate-11 overflow-hidden rounded-2xl hidden md:hidden lg:block">
                     <div class="w-[180px] h-[180px]">
                         <img src="./images/berries-picture.png" alt="rotate-img"
                             class="w-full h-full object-cover rounded-2xl">
@@ -636,7 +649,7 @@
         </div>
     </section>
 
-    <section class="w-full mt-12 md:mt-20">
+    <section id="about" class="w-full mt-12 md:mt-20">
         <div class="w-[90%] mx-auto">
 
             <div class="relative bg-cover rounded-2xl bg-center px-3 py-4 md:px-4 md:py-5"
@@ -855,7 +868,7 @@
         </div>
     </section>
 
-    <section class="w-full mt-12 md:mt-20">
+    <section id="production" class="w-full mt-12 md:mt-20">
         <div class="w-[90%] mx-auto flex flex-col gap-5">
 
             <!-- Heading + Description -->
@@ -1141,7 +1154,7 @@
 
     </section>
 
-    <section class="w-full mt-12 md:mt-20">
+    <section id="location" class="w-full mt-12 md:mt-20">
 
         <div class="w-[90%] mx-auto">
 
